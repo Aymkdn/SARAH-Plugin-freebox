@@ -1,0 +1,83 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleFreebox" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleFreebox" scope="public">
+    <example>Sarah allumes la télé</example>
+    <tag>out.action=new Object(); </tag>
+    
+    <item>Sarah</item>
+    <one-of>
+      <item>allume la friboxe            <tag>out.action.key="on";</tag></item>
+  	  <item>éteint la friboxe            <tag>out.action.key="off";</tag></item>
+      <item>éteint la télé               <tag>out.action.key="off";</tag></item>
+		  <item>mets la télé                 <tag>out.action.key="tv";</tag></item>
+      <item>allume la télé               <tag>out.action.key="tvOn";</tag></item>
+      <item>coupe le son de la friboxe   <tag>out.action.key="mute";</tag></item>
+      <item>remets le son de la friboxe  <tag>out.action.key="muteOff";</tag></item>
+      <item>baisse légèrement le son de la friboxe  <tag>out.action.key="soundDownLight";</tag></item>
+      <item>monte légèrement le son de la friboxe   <tag>out.action.key="soundUpLight";</tag></item>
+      <item>baisse le son de la friboxe  <tag>out.action.key="soundDown";</tag></item>
+      <item>monte le son de la friboxe   <tag>out.action.key="soundUp";</tag></item>
+      <item>augmente le son de la friboxe           <tag>out.action.key="soundUp";</tag></item>
+      <item>les infos du programme       <tag>out.action.key="info";</tag></item>
+      <item>mets la friboxe sur pause    <tag>out.action.key="pause";</tag></item>
+      <item>mets sur pause la friboxe    <tag>out.action.key="pause";</tag></item>
+      <item>mets sur pause le programme  <tag>out.action.key="pause";</tag></item>
+      <item>mets la friboxe en lecture   <tag>out.action.key="play";</tag></item>
+      <item>mets en lecture la friboxe   <tag>out.action.key="play";</tag></item>
+      <item>mets en lecture le programme <tag>out.action.key="play";</tag></item>
+      <item>mets le programme en lecture <tag>out.action.key="play";</tag></item>
+      <item>reviens au direct            <tag>out.action.key="direct";</tag></item>
+      <item>remets au direct             <tag>out.action.key="direct";</tag></item>
+      <item>enlève les infos             <tag>out.action.key="infoOff";</tag></item>
+      <item>friboxe OK                   <tag>out.action.key="ok";</tag></item>
+      <item>friboxe menu                 <tag>out.action.key="home";</tag></item>
+      <item>zappe sur</item>
+     </one-of>
+
+    <item repeat="0-1">
+    <one-of>
+		  <item>AB1<tag>out.action.key="39";out.action.msg="je zappe sur AB1"</tag></item>
+		  <item>Arte<tag>out.action.key="7";out.action.msg="je zappe sur Arte"</tag></item>
+		  <item>BFM TV<tag>out.action.key="15";out.action.msg="je zappe sur BFM TV"</tag></item>
+		  <item>Canal plus<tag>out.action.key="4";out.action.msg="je zappe sur Canal plus"</tag></item>
+      <item>Chérie<tag>out.action.key="25";out.action.msg="je zappe sur Chérie 25"</tag></item>
+		  <item>Clubbing TV<tag>out.action.key="72";out.action.msg="je zappe sur Clubbing TV"</tag></item>
+		  <item>D17<tag>out.action.key="17";out.action.msg="je zappe sur D17";</tag></item>
+		  <item>D8<tag>out.action.key="8";out.action.msg="je zappe sur D8"</tag></item>
+		  <item>Disney Channel<tag>out.action.key="48";out.action.msg="je zappe sur Disney Channel"</tag></item>
+      <item>Euronews<tag>out.action.key="82";out.action.msg="je zappe sur Euronews"</tag></item>
+      <item>L'équipe<tag>out.action.key="21";out.action.msg="je zappe sur l'équipe 21"</tag></item>
+		  <item>France 2<tag>out.action.key="2";out.action.msg="je zappe sur France 2"</tag></item>
+		  <item>France 24<tag>out.action.key="95";out.action.msg="je zappe sur France 24"</tag></item>
+		  <item>France 3<tag>out.action.key="3";out.action.msg="je zappe sur France 3"</tag></item>
+		  <item>France 4<tag>out.action.key="14";out.action.msg="je zappe sur France 4"</tag></item>
+		  <item>France 5<tag>out.action.key="5";out.action.msg="je zappe sur France 5"</tag></item>
+      <item>France O<tag>out.action.key="19";out.action.msg="je zappe sur France O"</tag></item>
+		  <item>Game One<tag>out.action.key="118";out.action.msg="je zappe sur Game One"</tag></item>
+		  <item>Game One plus un<tag>out.action.key="66";out.action.msg="je zappe sur Game One plus un"</tag></item>
+		  <item>Gulli<tag>out.action.key="18";out.action.msg="je zappe sur Gulli"</tag></item>
+      <item>HD1<tag>out.action.key="20";out.action.msg="je zappe sur HD1"</tag></item>
+		  <item>IDF1<tag>out.action.key="214";out.action.msg="je zappe sur IDF1"</tag></item>
+		  <item>I-Télé<tag>out.action.key="16";out.action.msg="je zappe sur I-Télé"</tag></item>
+		  <item>LCP<tag>out.action.key="13";out.action.msg="je zappe sur LCP"</tag></item>
+      <item>La Chaine Parlementaire<tag>out.action.key="13";out.action.msg="je zappe sur LCP"</tag></item>
+		  <item>M6<tag>out.action.key="6";out.action.msg="je zappe sur M6"</tag></item>
+      <item>6 ter<tag>out.action.key="22";out.action.msg="je zappe sur 6 ter"</tag></item>
+      <item>No Life<tag>out.action.key="123";out.action.msg="je zappe sur No Life"</tag></item>
+		  <item>NRJ 12<tag>out.action.key="12";out.action.msg="je zappe sur NRJ 12"</tag></item>
+		  <item>NRJ Hits<tag>out.action.key="59";out.action.msg="je zappe sur NRJ Hits"</tag></item>
+		  <item>NT1<tag>out.action.key="11";out.action.msg="je zappe sur NT1"</tag></item>
+      <item>Numéro 23<tag>out.action.key="23";out.action.msg="je zappe sur Numéro 23"</tag></item>
+      <item>RMC<tag>out.action.key="40";out.action.msg="je zappe sur RMC Découverte"</tag></item>
+      <item>RMC Découverte<tag>out.action.key="40";out.action.msg="je zappe sur RMC Découverte"</tag></item>
+		  <item>RTL9<tag>out.action.key="28";out.action.msg="je zappe sur RTL9"</tag></item>
+		  <item>TF1<tag>out.action.key="1";out.action.msg="je zappe sur TF1"</tag></item>
+		  <item>TMC<tag>out.action.key="10";out.action.msg="je zappe sur TMC"</tag></item>
+      <item>TV5<tag>out.action.key="79";out.action.msg="je zappe sur TV5 Monde"</tag></item>
+      <item>Vivolta<tag>out.action.key="38";out.action.msg="je zappe sur Vivolta"</tag></item>
+		  <item>W 9<tag>out.action.key="9";out.action.msg="je zappe sur W9"</tag></item>
+    </one-of>
+    </item>	  
+
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/freebox";</tag>
+  </rule> 
+</grammar>
