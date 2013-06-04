@@ -1,0 +1,9 @@
+{
+  "modules" : { 
+    "freebox"  : {
+      "description": "Permet de commander la Freebox (voir la documentation).",
+      "version" : "3.0",
+      "code_telecommande": ""
+    }
+  }
+}
