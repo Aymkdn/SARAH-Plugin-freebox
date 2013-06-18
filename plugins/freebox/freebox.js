@@ -8,16 +8,23 @@ var commands = {
               },
   'mute'    : { key: 'mute',        tts: "je coupe le son"},
   'muteOff' : { key: 'mute',        tts: "je remet le son"},  
-  'soundDownLight' : { key: 'vol_dec|vol_dec|vol_dec|vol_dec|vol_dec', tts: "je baisse légèrement le son"},
-  'soundUpLight'   : { key: 'vol_inc|vol_inc|vol_inc|vol_inc|vol_inc', tts: "je monte légèrement le son"},
-  'soundDown'      : { key: 'vol_dec|vol_dec|vol_dec|vol_dec|vol_dec|vol_dec|vol_dec|vol_dec|vol_dec|vol_dec', tts: "je baisse le son"},
-  'soundUp'        : { key: 'vol_inc|vol_inc|vol_inc|vol_inc|vol_inc|vol_inc|vol_inc|vol_inc|vol_inc|vol_inc', tts: "je monte le son"},
+  'soundDownLight' : { key: 'vol_dec*10', tts: "je baisse légèrement le son"},
+  'soundUpLight'   : { key: 'vol_inc*10', tts: "je monte légèrement le son"},
+  'soundDown'      : { key: 'vol_dec*20', tts: "je baisse le son"},
+  'soundUp'        : { key: 'vol_inc*20', tts: "je monte le son"},
   'info'    : { key: 'ok|ok',       tts: "voici les infos du programme"},
   'infoOff' : { key: 'red|red',     tts: "j'enlève les infos"},
   'ok'      : { key: 'ok',          tts: "OK"},
   'home'    : { key: 'home',        tts: "Retour sur la home de la Fribox"},
+  'up'      : { key: 'up',          tts: "Voilà"},
+  'down'    : { key: 'down',        tts: "Voilà"},
+  'right'   : { key: 'right',       tts: "Voilà"},
+  'left'    : { key: 'left',        tts: "Voilà"},
+  'back'    : { key: 'red',        tts: "Retour"},
   'pause'   : { key: 'play',        tts: "je mets sur pause le programme"},
   'play'    : { key: 'play',        tts: "je remets en lecture le programme"},
+  'enregistrements': { key: 'home|back|up|ok', tts: "je vais dans Mes Enregistrements"},
+  'videos'  : { key: 'home|back|right|ok', tts: "je vais dans Mes Vidéos"},
   'direct'  : { key: 'green|ok|red',     tts: "je remets le direct"}
 }
 
@@ -67,6 +74,18 @@ exports.action = function(data, callback, config, SARAH){
 // @return {Array} On va retourner un tableau d'URL à utiliser
 var buildURL = function(url, keys){
   if (keys.length <= 0) { callback({'tts' : "Je n'ai pas compris"}); return; }
+  // si la commande contient des '*' ça veut dire qu'on a plusieurs occurences pour la commande ciblée
+  if (keys.indexOf('*') > -1) {
+    keys=keys.replace(/([a-z_]+)(\*[0-9]+)(\|)?/g,function(all,a,b,c) {
+          var i=1*b.slice(1),str=a,c=c||"";
+          while (i>1) {
+            str+="|"+a;
+            i--;
+          }
+          return str+c;
+        });
+  }
+  // si la commande contient des '|' alors on envoie plusieurs requêtes à la box
   var spl = keys.split('|');
   var len = spl.length;
   if (len > 0) {

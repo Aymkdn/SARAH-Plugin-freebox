@@ -8,8 +8,8 @@
       <item>allume la friboxe            <tag>out.action.key="on";</tag></item>
   	  <item>éteint la friboxe            <tag>out.action.key="off";</tag></item>
       <item>éteint la télé               <tag>out.action.key="off";</tag></item>
-		  <item>mets la télé                 <tag>out.action.key="tv";</tag></item>
       <item>allume la télé               <tag>out.action.key="tvOn";</tag></item>
+		  <item>mets la télé                 <tag>out.action.key="tv";</tag></item>
       <item>coupe le son de la friboxe   <tag>out.action.key="mute";</tag></item>
       <item>remets le son de la friboxe  <tag>out.action.key="muteOff";</tag></item>
       <item>baisse légèrement le son de la friboxe  <tag>out.action.key="soundDownLight";</tag></item>
@@ -17,7 +17,6 @@
       <item>baisse le son de la friboxe  <tag>out.action.key="soundDown";</tag></item>
       <item>monte le son de la friboxe   <tag>out.action.key="soundUp";</tag></item>
       <item>augmente le son de la friboxe           <tag>out.action.key="soundUp";</tag></item>
-      <item>les infos du programme       <tag>out.action.key="info";</tag></item>
       <item>mets la friboxe sur pause    <tag>out.action.key="pause";</tag></item>
       <item>mets sur pause la friboxe    <tag>out.action.key="pause";</tag></item>
       <item>mets sur pause le programme  <tag>out.action.key="pause";</tag></item>
@@ -26,10 +25,18 @@
       <item>mets en lecture le programme <tag>out.action.key="play";</tag></item>
       <item>mets le programme en lecture <tag>out.action.key="play";</tag></item>
       <item>reviens au direct            <tag>out.action.key="direct";</tag></item>
-      <item>remets au direct             <tag>out.action.key="direct";</tag></item>
+      <item>remets le direct             <tag>out.action.key="direct";</tag></item>
+      <item>les infos du programme       <tag>out.action.key="info";</tag></item>
       <item>enlève les infos             <tag>out.action.key="infoOff";</tag></item>
       <item>friboxe OK                   <tag>out.action.key="ok";</tag></item>
       <item>friboxe menu                 <tag>out.action.key="home";</tag></item>
+      <item>friboxe droit                <tag>out.action.key="right";</tag></item>
+      <item>friboxe gauche               <tag>out.action.key="left";</tag></item>
+      <item>friboxe haut                 <tag>out.action.key="up";</tag></item>
+      <item>friboxe bas                  <tag>out.action.key="down";</tag></item>
+      <item>friboxe retour               <tag>out.action.key="back";</tag></item>
+      <item>va dans mes enregistrements  <tag>out.action.key="enregistrements";</tag></item>
+      <item>va dans mes vidéos           <tag>out.action.key="videos";</tag></item>
       <item>zappe sur</item>
      </one-of>
 
