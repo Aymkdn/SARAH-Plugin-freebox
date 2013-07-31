@@ -104,7 +104,6 @@ var buildURL = function(url, keys){
 var requestURL = function(url, tts, callback, after){
   var request = require('request');
   var u=url.shift();
-  console.log(u);
   request({ 'uri': u }, function (err, response, json){
     if (err || response.statusCode != 200) {
       callback({'tts': "L'action a échoué"});
