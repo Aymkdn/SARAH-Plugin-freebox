@@ -2,7 +2,7 @@
 var commands = {
   'on'      : { key: 'power',       tts: "j'allume la fribox"},
   'off'     : { key: 'power',       tts: "j'éteint la fribox"},
-  'tv'      : { key: 'home|red|ok', tts: "je mets la télé"},
+  'tv'      : { key: 'home|right|left|red|ok', tts: "je mets la télé"},
   'tvOn'    : { key: 'power',       tts: "j'allume la télé", 
                 after: { key: 'ok',     tts: "la télé est allumée",   delay: 5000 }
               },
@@ -20,11 +20,11 @@ var commands = {
   'down'    : { key: 'down',        tts: "Voilà"},
   'right'   : { key: 'right',       tts: "Voilà"},
   'left'    : { key: 'left',        tts: "Voilà"},
-  'back'    : { key: 'red',        tts: "Retour"},
+  'back'    : { key: 'red',         tts: "Retour"},
   'pause'   : { key: 'play',        tts: "je mets sur pause le programme"},
   'play'    : { key: 'play',        tts: "je remets en lecture le programme"},
-  'enregistrements': { key: 'home|back|up|ok', tts: "je vais dans Mes Enregistrements"},
-  'videos'  : { key: 'home|back|right|ok', tts: "je vais dans Mes Vidéos"},
+  'enregistrements': { key: 'home|right|left|red|up|ok', tts: "je vais dans Mes Enregistrements"},
+  'videos'  : { key: 'home|right|left|red|right|ok', tts: "je vais dans Mes Vidéos"},
   'direct'  : { key: 'green|ok|red',     tts: "je remets le direct"}
 }
 
@@ -38,7 +38,7 @@ exports.action = function(data, callback, config, SARAH){
   
   // Si aucune "key" n'est passée, ça veut dire qu'on n'a pas reçu d'ordre
   if (!data.key){
-    //callback({ 'tts': 'Aucun ordre' });
+    callback({ 'tts': 'Aucun ordre' });
     return;
   }
 
@@ -104,14 +104,14 @@ var buildURL = function(url, keys){
 var requestURL = function(url, tts, callback, after){
   var request = require('request');
   var u=url.shift();
-  //console.log(u);
+  console.log(u);
   request({ 'uri': u }, function (err, response, json){
     if (err || response.statusCode != 200) {
       callback({'tts': "L'action a échoué"});
       return;
     }
     
-    if (url.length>0) requestURL(url, tts, callback, after);
+    if (url.length>0) requestURL(url, tts, callback, after)
     else {
       callback({ 'tts': tts });
       if (after) after.call(this)
