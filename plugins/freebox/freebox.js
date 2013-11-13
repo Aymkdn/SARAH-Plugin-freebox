@@ -15,7 +15,7 @@ var commands = {
   'info'    : { key: 'ok|ok',       tts: "voici les infos du programme"},
   'infoOff' : { key: 'red|red',     tts: "j'enlève les infos"},
   'ok'      : { key: 'ok',          tts: "OK"},
-  'home'    : { key: 'home',        tts: "Retour sur la home de la Fribox"},
+  'home'    : { key: 'home|red',        tts: "Retour sur la home de la Fribox"},
   'up'      : { key: 'up',          tts: "Voilà"},
   'down'    : { key: 'down',        tts: "Voilà"},
   'right'   : { key: 'right',       tts: "Voilà"},

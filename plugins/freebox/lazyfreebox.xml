@@ -1,0 +1,25 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleLazyFreebox" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleLazyFreebox" scope="public">
+    <example>descend</example>
+    <tag>out.action=new Object(); </tag>
+
+    <one-of>
+    	<item>Merci ça sera tout           <tag>out.action._attributes.context = "default"; out.action._attributes.tts = "Mais de rien !"</tag></item>
+      <item>OK                           <tag>out.action.key="ok";</tag></item>
+      <item>menu Freebox                 <tag>out.action.key="home";</tag></item>
+      <item>droite                       <tag>out.action.key="right";</tag></item>
+      <item>à droite                     <tag>out.action.key="right";</tag></item>
+      <item>gauche                       <tag>out.action.key="left";</tag></item>
+      <item>à gauche                     <tag>out.action.key="left";</tag></item>
+      <item>haut                         <tag>out.action.key="up";</tag></item>
+      <item>en haut                      <tag>out.action.key="up";</tag></item>
+      <item>monte                        <tag>out.action.key="up";</tag></item>
+      <item>bas                          <tag>out.action.key="down";</tag></item>
+      <item>en bas                       <tag>out.action.key="down";</tag></item>
+      <item>descend                      <tag>out.action.key="down";</tag></item>
+      <item>retour                       <tag>out.action.key="back";</tag></item>
+    </one-of>
+
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/freebox";</tag>
+  </rule> 
+</grammar>
