@@ -1,6 +1,11 @@
 ChangeLog
 =========
 
+**v4.1 (12/Janvier/2013)** :
+  - Ajout de "chaine suivante" et "chaine précédente" lorsqu'on passe en mode Freebox
+  - Lorsqu'on dit "SARAH allume la télé", elle va ensuite couper le son de la TV et nous demander si on désire changer de chaine (dire "Oui zappe sur M6" pour aller sur la 6, ou "Non merci")
+  - Correction de quelques bugs
+
 **v4.0 (13/Novembre/2013)** :
   - Free a changé la numérotation des chaines "NRJ Hits" et "Clubbing TV"
   - Correction d'un bug lié à "SARAH Freebox menu"

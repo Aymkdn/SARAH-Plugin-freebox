@@ -47,7 +47,7 @@
       <item>friboxe retour               <tag>out.action.key="back";</tag></item>
       <item>va dans mes enregistrements  <tag>out.action.key="enregistrements";</tag></item>
       <item>va dans mes vidéos           <tag>out.action.key="videos";</tag></item>
-      <item>active le mode freebox<tag>out.action._attributes.context = "lazyfreebox.xml"</tag><tag>out.action._attributes.tts = "Mode Freebox activé. Je t'écoute !"</tag></item>
+      <item>active le mode freebox<tag>out.action._attributes.context = "lazyfreebox.xml"</tag><tag>out.action._attributes.tts = "Mode Freebox activé. Dis. Merci ça sera tout. Pour en sortir."</tag></item>
       <item>passe en mode freebox<tag>out.action._attributes.context = "lazyfreebox.xml"</tag><tag>out.action._attributes.tts = "Mode Freebox activé. Je t'écoute !"</tag></item>
 
       <item>zappe sur Ah Bé 1<tag>out.action.key="39";out.action.msg="je zappe sur AB1"</tag></item>
@@ -70,7 +70,7 @@
       <item>zappe sur Game One<tag>out.action.key="118";out.action.msg="je zappe sur Game One"</tag></item>
       <item>zappe sur Game One plus un<tag>out.action.key="66";out.action.msg="je zappe sur Game One plus un"</tag></item>
       <item>zappe sur Gulli<tag>out.action.key="18";out.action.msg="je zappe sur Gulli"</tag></item>
-      <item>zappe sur HD1<tag>out.action.key="20";out.action.msg="je zappe sur HD1"</tag></item>
+      <item>zappe sur H dé un<tag>out.action.key="20";out.action.msg="je zappe sur HD1"</tag></item>
       <item>zappe sur IDée F 1<tag>out.action.key="214";out.action.msg="je zappe sur IDF1"</tag></item>
       <item>zappe sur I-Télé<tag>out.action.key="16";out.action.msg="je zappe sur I-Télé"</tag></item>
       <item>zappe sur LCP<tag>out.action.key="13";out.action.msg="je zappe sur LCP"</tag></item>

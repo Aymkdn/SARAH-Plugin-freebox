@@ -18,6 +18,8 @@
       <item>en bas                       <tag>out.action.key="down";</tag></item>
       <item>descend                      <tag>out.action.key="down";</tag></item>
       <item>retour                       <tag>out.action.key="back";</tag></item>
+      <item>chaine suivante              <tag>out.action.key="programUp";</tag></item>
+      <item>chaine précédente            <tag>out.action.key="programDown";</tag></item>
     </one-of>
 
     <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/freebox";</tag>
