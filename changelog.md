@@ -1,7 +1,7 @@
 ChangeLog
 =========
 
-**v4.2 ()** :
+**v4.2 (17/Janvier/2013)** :
   - Ajout de "Direct Huit" pour D8 et "Direct Star" pour D17
   
 **v4.1 (12/Janvier/2013)** :
