@@ -1,10 +1,10 @@
 ChangeLog
 =========
 
-**v4.2 (17/Janvier/2013)** :
+**v4.2 (17/Janvier/2014)** :
   - Ajout de "Direct Huit" pour D8 et "Direct Star" pour D17
   
-**v4.1 (12/Janvier/2013)** :
+**v4.1 (12/Janvier/2014)** :
   - Ajout de "chaine suivante" et "chaine pr?c?dente" lorsqu'on passe en mode Freebox
   - Lorsqu'on dit "SARAH allume la t?l?", elle va ensuite couper le son de la TV et nous demander si on d?sire changer de chaine (dire "Oui zappe sur M6" pour aller sur la 6, ou "Non merci")
   - Correction de quelques bugs
