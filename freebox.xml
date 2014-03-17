@@ -28,6 +28,7 @@
       <item>mets sur pause la friboxe    <tag>out.action.key="pause";</tag></item>
       <item>mets sur pause le programme  <tag>out.action.key="pause";</tag></item>
       <item>mets la friboxe en lecture   <tag>out.action.key="play";</tag></item>
+      <item>remets la friboxe en lecture   <tag>out.action.key="play";</tag></item>
       <item>mets en lecture la friboxe   <tag>out.action.key="play";</tag></item>
       <item>remets en lecture la friboxe <tag>out.action.key="play";</tag></item>
       <item>mets en lecture le programme <tag>out.action.key="play";</tag></item>
@@ -50,50 +51,49 @@
       <item>active le mode freebox<tag>out.action._attributes.context = "lazyfreebox.xml"</tag><tag>out.action._attributes.tts = "Mode Freebox activé. Dis. Merci ça sera tout. Pour en sortir."</tag></item>
       <item>passe en mode freebox<tag>out.action._attributes.context = "lazyfreebox.xml"</tag><tag>out.action._attributes.tts = "Mode Freebox activé. Je t'écoute !"</tag></item>
 
-      <item>zappe sur Ah Bé 1<tag>out.action.key="39";out.action.msg="je zappe sur AB1"</tag></item>
+      <item>zappe sur Ah Bé Un<tag>out.action.key="39";out.action.msg="je zappe sur AB1"</tag></item>
       <item>zappe sur Arté<tag>out.action.key="7";out.action.msg="je zappe sur Arte"</tag></item>
       <item>zappe sur BFM TV<tag>out.action.key="15";out.action.msg="je zappe sur BFM TV"</tag></item>
       <item>zappe sur Canal plus<tag>out.action.key="4";out.action.msg="je zappe sur Canal plus"</tag></item>
       <item>zappe sur Chérie<tag>out.action.key="25";out.action.msg="je zappe sur Chérie 25"</tag></item>
       <item>zappe sur Clubbing TV<tag>out.action.key="73";out.action.msg="je zappe sur Clubbing TV"</tag></item>
-      <item>zappe sur D17<tag>out.action.key="17";out.action.msg="je zappe sur D17";</tag></item>
       <item>zappe sur Dé dix sept<tag>out.action.key="17";out.action.msg="je zappe sur D17";</tag></item>
       <item>zappe sur Direct Star<tag>out.action.key="17";out.action.msg="je zappe sur D17";</tag></item>
-      <item>zappe sur D8<tag>out.action.key="8";out.action.msg="je zappe sur D8"</tag></item>
       <item>zappe sur Dé huit<tag>out.action.key="8";out.action.msg="je zappe sur D8"</tag></item>
       <item>zappe sur Direct huit<tag>out.action.key="8";out.action.msg="je zappe sur D8"</tag></item>
       <item>zappe sur Disney Channel<tag>out.action.key="48";out.action.msg="je zappe sur Disney Channel"</tag></item>
       <item>zappe sur Euronews<tag>out.action.key="82";out.action.msg="je zappe sur Euronews"</tag></item>
       <item>zappe sur L'équipe<tag>out.action.key="21";out.action.msg="je zappe sur l'équipe 21"</tag></item>
-      <item>zappe sur France 2<tag>out.action.key="2";out.action.msg="je zappe sur France 2"</tag></item>
-      <item>zappe sur France 24<tag>out.action.key="95";out.action.msg="je zappe sur France 24"</tag></item>
-      <item>zappe sur France 3<tag>out.action.key="3";out.action.msg="je zappe sur France 3"</tag></item>
-      <item>zappe sur France 4<tag>out.action.key="14";out.action.msg="je zappe sur France 4"</tag></item>
-      <item>zappe sur France 5<tag>out.action.key="5";out.action.msg="je zappe sur France 5"</tag></item>
-      <item>zappe sur France O<tag>out.action.key="19";out.action.msg="je zappe sur France O"</tag></item>
+      <item>zappe sur France deux<tag>out.action.key="2";out.action.msg="je zappe sur France 2"</tag></item>
+      <item>zappe sur France vingt quatre<tag>out.action.key="95";out.action.msg="je zappe sur France 24"</tag></item>
+      <item>zappe sur France trois<tag>out.action.key="3";out.action.msg="je zappe sur France 3"</tag></item>
+      <item>zappe sur France quatre<tag>out.action.key="14";out.action.msg="je zappe sur France 4"</tag></item>
+      <item>zappe sur France cinq<tag>out.action.key="5";out.action.msg="je zappe sur France 5"</tag></item>
+      <item>zappe sur France Oh<tag>out.action.key="19";out.action.msg="je zappe sur France O"</tag></item>
       <item>zappe sur Game One<tag>out.action.key="118";out.action.msg="je zappe sur Game One"</tag></item>
       <item>zappe sur Game One plus un<tag>out.action.key="66";out.action.msg="je zappe sur Game One plus un"</tag></item>
       <item>zappe sur Gulli<tag>out.action.key="18";out.action.msg="je zappe sur Gulli"</tag></item>
       <item>zappe sur H dé un<tag>out.action.key="20";out.action.msg="je zappe sur HD1"</tag></item>
-      <item>zappe sur IDée F 1<tag>out.action.key="214";out.action.msg="je zappe sur IDF1"</tag></item>
+      <item>zappe sur IDée F un<tag>out.action.key="214";out.action.msg="je zappe sur IDF1"</tag></item>
       <item>zappe sur I-Télé<tag>out.action.key="16";out.action.msg="je zappe sur I-Télé"</tag></item>
       <item>zappe sur LCP<tag>out.action.key="13";out.action.msg="je zappe sur LCP"</tag></item>
       <item>zappe sur La Chaine Parlementaire<tag>out.action.key="13";out.action.msg="je zappe sur LCP"</tag></item>
-      <item>zappe sur M6<tag>out.action.key="6";out.action.msg="je zappe sur M6"</tag></item>
-      <item>zappe sur 6 ter<tag>out.action.key="22";out.action.msg="je zappe sur 6 ter"</tag></item>
+      <item>zappe sur M six<tag>out.action.key="6";out.action.msg="je zappe sur M6"</tag></item>
+      <item>zappe sur six terre<tag>out.action.key="22";out.action.msg="je zappe sur 6 ter"</tag></item>
       <item>zappe sur No Life<tag>out.action.key="123";out.action.msg="je zappe sur No Life"</tag></item>
-      <item>zappe sur NRJ 12<tag>out.action.key="12";out.action.msg="je zappe sur NRJ 12"</tag></item>
-      <item>zappe sur NRJ Hits<tag>out.action.key="65";out.action.msg="je zappe sur NRJ Hits"</tag></item>
-      <item>zappe sur NT1<tag>out.action.key="11";out.action.msg="je zappe sur NT1"</tag></item>
-      <item>zappe sur Numéro 23<tag>out.action.key="23";out.action.msg="je zappe sur Numéro 23"</tag></item>
-      <item>zappe sur RMC<tag>out.action.key="40";out.action.msg="je zappe sur RMC Découverte"</tag></item>
+      <item>zappe sur énergie douze<tag>out.action.key="12";out.action.msg="je zappe sur NRJ 12"</tag></item>
+      <item>zappe sur énergie Hit<tag>out.action.key="65";out.action.msg="je zappe sur NRJ Hits"</tag></item>
+      <item>zappe sur énergie Hitse<tag>out.action.key="65";out.action.msg="je zappe sur NRJ Hits"</tag></item>
+      <item>zappe sur haine Thé un<tag>out.action.key="11";out.action.msg="je zappe sur NT1"</tag></item>
+      <item>zappe sur Numéro vingt trois<tag>out.action.key="23";out.action.msg="je zappe sur Numéro 23"</tag></item>
+      <item>zappe sur R M C<tag>out.action.key="40";out.action.msg="je zappe sur RMC Découverte"</tag></item>
       <item>zappe sur RMC Découverte<tag>out.action.key="40";out.action.msg="je zappe sur RMC Découverte"</tag></item>
-      <item>zappe sur RTL9<tag>out.action.key="28";out.action.msg="je zappe sur RTL9"</tag></item>
-      <item>zappe sur TF1<tag>out.action.key="1";out.action.msg="je zappe sur TF1"</tag></item>
+      <item>zappe sur RTL neuf<tag>out.action.key="28";out.action.msg="je zappe sur RTL9"</tag></item>
+      <item>zappe sur Thé F un<tag>out.action.key="1";out.action.msg="je zappe sur TF1"</tag></item>
       <item>zappe sur TMC<tag>out.action.key="10";out.action.msg="je zappe sur TMC"</tag></item>
-      <item>zappe sur TV5<tag>out.action.key="79";out.action.msg="je zappe sur TV5 Monde"</tag></item>
+      <item>zappe sur TV cinq<tag>out.action.key="79";out.action.msg="je zappe sur TV5 Monde"</tag></item>
       <item>zappe sur Vivolta<tag>out.action.key="38";out.action.msg="je zappe sur Vivolta"</tag></item>
-      <item>zappe sur W 9<tag>out.action.key="9";out.action.msg="je zappe sur W9"</tag></item>
+      <item>zappe sur W neuf<tag>out.action.key="9";out.action.msg="je zappe sur W9"</tag></item>
     </one-of>
 
     <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/freebox";</tag>
