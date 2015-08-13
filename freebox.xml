@@ -8,8 +8,9 @@
       <item>allume la friboxe            <tag>out.action.key="on";</tag></item>
   	  <item>éteint la friboxe            <tag>out.action.key="off";</tag></item>
       <item>éteint la télé               <tag>out.action.key="off";</tag></item>
+      <item>état de la télé              <tag>out.action.key="etat";</tag></item>
       <item>allume la télé               <tag>out.action.key="tvOn";</tag></item>
-		  <item>mets la télé                 <tag>out.action.key="tv";</tag></item>
+		  <item>mai la télé                 <tag>out.action.key="tv";</tag></item>
       <item>coupe le son de la friboxe   <tag>out.action.key="mute";</tag></item>
       <item>coupe le son sur la friboxe  <tag>out.action.key="mute";</tag></item>
       <item>remets le son de la friboxe  <tag>out.action.key="muteOff";</tag></item>
@@ -86,11 +87,12 @@
       <item>zappe sur énergie Hitse<tag>out.action.key="65";out.action.msg="je zappe sur NRJ Hits"</tag></item>
       <item>zappe sur haine Thé un<tag>out.action.key="11";out.action.msg="je zappe sur NT1"</tag></item>
       <item>zappe sur Numéro vingt trois<tag>out.action.key="23";out.action.msg="je zappe sur Numéro 23"</tag></item>
-      <item>zappe sur R M C<tag>out.action.key="40";out.action.msg="je zappe sur RMC Découverte"</tag></item>
-      <item>zappe sur RMC Découverte<tag>out.action.key="40";out.action.msg="je zappe sur RMC Découverte"</tag></item>
+      <item>zappe sur R M C<tag>out.action.key="24";out.action.msg="je zappe sur RMC Découverte"</tag></item>
+      <item>zappe sur RMC Découverte<tag>out.action.key="24";out.action.msg="je zappe sur RMC Découverte"</tag></item>
       <item>zappe sur RTL neuf<tag>out.action.key="28";out.action.msg="je zappe sur RTL9"</tag></item>
       <item>zappe sur Thé F un<tag>out.action.key="1";out.action.msg="je zappe sur TF1"</tag></item>
       <item>zappe sur TMC<tag>out.action.key="10";out.action.msg="je zappe sur TMC"</tag></item>
+      <item>zappe sur Virgine Radio tévé<tag>out.action.key="77";out.action.msg="je zappe sur Virgine Radio tévé"</tag></item>
       <item>zappe sur TV cinq<tag>out.action.key="79";out.action.msg="je zappe sur TV5 Monde"</tag></item>
       <item>zappe sur Vivolta<tag>out.action.key="38";out.action.msg="je zappe sur Vivolta"</tag></item>
       <item>zappe sur W neuf<tag>out.action.key="9";out.action.msg="je zappe sur W9"</tag></item>

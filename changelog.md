@@ -1,6 +1,11 @@
 ChangeLog
 =========
 
+**v4.3 (13/Août/2015)** :
+  - Renumérotation de la chaine RMC
+  - Ajout de Virgin Radio TV (canal 77)
+  - Réécriture des requêtes suite à la dernière mise à jour du Freebox Player
+  
 **v4.2.1 (17/Mars/2014)** :
   - Modifier des chiffres dans le XML en pleines lettes
 

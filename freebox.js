@@ -2,9 +2,10 @@
 var commands = {
   'on'      : { key: 'power',       tts: "j'allume la fribox"},
   'off'     : { key: 'power',       tts: "j'éteint la fribox"},
+  'etat'    : { key: 'etat',       tts: "je te dis ça tout de suite"},
   'tv'      : { key: 'home|right|left|red|ok', tts: "je mets la télé"},
   'tvOn'    : { key: 'power',       tts: "j'allume la télé", 
-                after: { key: 'ok', tts: "la télé est allumée", delay: 5000 }
+                after: { key: 'ok', tts: "la télé est allumée", delay: 7000 }
               },
   'mute'    : { key: 'mute',        tts: "je coupe le son"},
   'muteOff' : { key: 'mute',        tts: "je remet le son"},  
@@ -50,7 +51,13 @@ exports.action = function(data, callback, config, SARAH){
   var cmd = commands[data.key];
   // si on envoie une commande spéciale comme "allume la Freebox"
   if (cmd) {
+    if (data.key === "etat") {
+      postURL();
+      callback({"tts":tts});
+      return;
+    }
     url = buildURL(_url+'&key=', cmd.key);
+    SARAH.speak(cmd.tts);
     requestURL(url, cmd.tts, callback, function() {
       // si 'after' est défini, alors on aura une seconde commande en différé
       if (cmd.after) {
@@ -74,7 +81,7 @@ exports.action = function(data, callback, config, SARAH){
                 "Oui zappe sur D17": "17",
                 "Oui zappe sur Dé dix sept": "17",
                 "Oui zappe sur Direct Star": "17",
-                "Oui zappe sur D8": "8",
+                "Oui zappe sur Dé huit": "8",
                 "Oui zappe sur Direct huit": "8",
                 "Oui zappe sur Disney Channel": "48",
                 "Oui zappe sur Euronews": "82",
@@ -100,14 +107,15 @@ exports.action = function(data, callback, config, SARAH){
                 "Oui zappe sur NRJ Hits": "65",
                 "Oui zappe sur NT1": "11",
                 "Oui zappe sur Numéro 23": "23",
-                "Oui zappe sur RMC": "40",
-                "Oui zappe sur RMC Découverte": "40",
+                "Oui zappe sur R M C": "24",
+                "Oui zappe sur R M C Découverte": "24",
                 "Oui zappe sur RTL9": "28",
                 "Oui zappe sur TF1": "1",
                 "Oui zappe sur TMC": "10",
                 "Oui zappe sur TV5": "79",
                 "Oui zappe sur Vivolta": "38",
                 "Oui zappe sur W 9": "9",
+                "Oui zappe sur Virgine Radio tévé": "77",
                 "Non c'est bon" : "non",
                 "Non merci": "non",
                 "non ça ira merci": "non"
@@ -134,7 +142,7 @@ exports.action = function(data, callback, config, SARAH){
   }
   
   // Lorsqu'on désire zapper sur une chaine
-  url = buildURL(_url+'&long=true&key=', data.key.split('').join('|'));
+  url = buildURL(_url+'&long=false&key=', data.key.split('').join('|'));
   if (data.msg) SARAH.speak(data.msg)
   requestURL(url, (data.msg?'':'Voilà'), callback)
 }
@@ -176,20 +184,87 @@ var buildURL = function(url, keys){
 var requestURL = function(url, tts, callback, after){
   var request = require('request');
   var u=url.shift();
-  console.log("url="+u)
+  console.log("[Freebox] url => "+u);
   request({ 'uri': u }, function (err, response, json){
     if (err || response.statusCode != 200) {
       callback({'tts': "L'action a échoué"});
       return;
     }
     
-    if (url.length>0) requestURL(url, tts, callback, after)
-    else {
-      if (callback) {
-        if (tts) callback({ 'tts': tts })
-        else callback()
+    setTimeout(function() {
+      if (url.length>0) requestURL(url, tts, callback, after)
+      else {
+        if (callback) {
+          if (tts) callback({})
+          else callback()
+        }
+        if (after) after.call(this)
       }
-      if (after) after.call(this)
-    }
+    }, (u.match(/vol_dec|vol_inc|key=[0-9]/) ? 5 : 1000)); // pas de délai pour vol_dec et vol_inc
   });
+}
+
+var postURL = function(callback, after) {
+  /**
+  il faut d'abord s'identifier à la freebox
+	$url = "http://mafreebox.freebox.fr/api/v1/login/authorize/";
+	$post = '{
+		 "app_id": "'.$GLOBALS['app_id'].'",
+		 "app_name": "App eedomus",
+		 "app_version": "'.$GLOBALS['app_version'].'",
+		 "device_name": "Box eedomus"
+	}';
+	$response = httpQuery($url, 'POST', $post);
+	$json = sdk_json_decode($response);
+	// ex. {"success":true,"result":{"app_token":"XibW6mhg0wsUsaQ2cMWj0a2QGQBHMi0EknUpa9paGJYPf3rMWU0ATNX4LZ20OhDe","track_id":0}}
+	if ($json['success'] != true) {
+		echo "Erreur lors de la connexion à la freebox"
+	else
+			echo $response;
+	}
+	$app_token = $json['result']['app_token'];
+	$track_id = $json['result']['track_id'];
+	if ($app_token != '')	{
+		saveVariable('new_app_token', $app_token);
+		saveVariable('new_track_id', $track_id);
+	}
+	echo "Veuillez autoriser l'application eedomus en sélectionnant <b>OUI</b> sur l'affichage de votre Freebox Server, puis cliquer sur </b>Continuer</b><br><br>";
+	$controller_id = getArg('controller_id');
+	[...]
+	$track_id = loadVariable('new_track_id');
+	$url = "http://mafreebox.freebox.fr/api/v1/login/authorize/$track_id";
+	$response = httpQuery($url, 'GET');
+	$json = sdk_json_decode($response);
+	// ex. {"success":true,"result":{"status":"granted","challenge":"\/ZRimxCjeGbH20TLeL6\/bQtAOTtRLInV","password_salt":"3qw8v\/0rTvOZfzsFZrBLiB\/WvJ56J9Gh"}}
+	if ($json['success'] != true) {
+		echo "Erreur lors de la connexion à la freebox:";
+	}
+  */
+  var querystring = require('querystring');
+  var http = require('http');
+  // Build the post string from an object
+  var post_data = querystring.stringify({ "action": "stop", "media_type": "video" });
+
+  // An object of options to indicate where to post to
+  var post_options = {
+    host: 'mafreebox.freebox.fr',
+    port: '80',
+    path: '/api/v3/airmedia/receivers/Freebox%20Player/',
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Length': post_data.length
+    }
+  };
+
+  // Set up the request
+  var post_req = http.request(post_options, function(res) {
+    res.on('data', function (chunk) {
+      console.log('Response: ' + chunk);
+    });
+  });
+
+  // post the data
+  post_req.write(post_data);
+  post_req.end();
 }
