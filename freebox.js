@@ -128,7 +128,7 @@ exports.action = function(data, callback, config, SARAH){
                   SARAH.speak("Très bien", end);
                 } else {
                   SARAH.speak("Je zappe sur la "+answer);
-                  url = buildURL(_url+'&key=', answer.split('').join('|'));
+                  url = buildURL(_url+'&long=false&key=', answer.split('').join('|'));
                   requestURL(url, null, end)
                 }
               });

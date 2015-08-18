@@ -1,6 +1,9 @@
 ChangeLog
 =========
 
+**v4.3.1 (18/Août/2015)** :
+  - Correction du changement de chaine après "Allume la télé" 
+  
 **v4.3 (13/Août/2015)** :
   - Renumérotation de la chaine RMC
   - Ajout de Virgin Radio TV (canal 77)
