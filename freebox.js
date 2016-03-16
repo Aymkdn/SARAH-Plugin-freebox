@@ -171,7 +171,7 @@ var buildURL = function(url, keys){
   if (len > 0) {
     var rUrl = [];
     for (var i=0; i < len; i++) {
-      var long = i == 0 && len != 1;
+      var long = i != len - 1;
       rUrl.push(url+spl[i]+'&long='+long);
     }
     return rUrl
