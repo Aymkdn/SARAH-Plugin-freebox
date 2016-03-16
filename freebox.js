@@ -128,7 +128,7 @@ exports.action = function(data, callback, config, SARAH){
                   SARAH.speak("Très bien", end);
                 } else {
                   SARAH.speak("Je zappe sur la "+answer);
-                  url = buildURL(_url+'&long=false&key=', answer.split('').join('|'));
+                  url = buildURL(_url+'&key=', answer.split('').join('|'));
                   requestURL(url, null, end)
                 }
               });
@@ -142,7 +142,7 @@ exports.action = function(data, callback, config, SARAH){
   }
   
   // Lorsqu'on désire zapper sur une chaine
-  url = buildURL(_url+'&long=false&key=', data.key.split('').join('|'));
+  url = buildURL(_url+'&key=', data.key.split('').join('|'));
   if (data.msg) SARAH.speak(data.msg)
   requestURL(url, (data.msg?'':'Voilà'), callback)
 }
@@ -170,9 +170,12 @@ var buildURL = function(url, keys){
   var len = spl.length;
   if (len > 0) {
     var rUrl = [];
-    for (var i=0; i < len; i++) rUrl.push(url+spl[i])
+    for (var i=0; i < len; i++) {
+      var long = i == 0 && len != 1;
+      rUrl.push(url+spl[i]+'&long='+long);
+    }
     return rUrl
-  } else return [ url+keys ]
+  } else return [ url+keys+'&long=false' ]
 }
 
 // Appelle une URL
