@@ -5,7 +5,7 @@ var commands = {
   'etat'    : { key: 'etat',       tts: "je te dis ça tout de suite"},
   'tv'      : { key: 'home|right|left|red|ok', tts: "je mets la télé"},
   'tvOn'    : { key: 'power',       tts: "j'allume la télé", 
-                after: { key: 'ok', tts: "la télé est allumée", delay: 7000 }
+                after: { key: 'home|right|left|red|ok', tts: "la télé est allumée", delay: 7000 }
               },
   'mute'    : { key: 'mute',        tts: "je coupe le son"},
   'muteOff' : { key: 'mute',        tts: "je remet le son"},  
@@ -39,6 +39,8 @@ exports.action = function(data, callback, config, SARAH){
     return;
   }
   
+  config.freeboxv5 = (config.freeboxv5=="true" ? true : false);
+  
   // Si aucune "key" n'est passée, ça veut dire qu'on n'a pas reçu d'ordre
   if (!data.key){
     callback({ 'tts': '' });
@@ -56,18 +58,18 @@ exports.action = function(data, callback, config, SARAH){
       callback({"tts":tts});
       return;
     }
-    url = buildURL(_url+'&key=', cmd.key);
+    url = buildURL(_url+'&key=', cmd.key, config);
     SARAH.speak(cmd.tts);
     requestURL(url, cmd.tts, callback, function() {
       // si 'after' est défini, alors on aura une seconde commande en différé
       if (cmd.after) {
         setTimeout(function() {
-          url = buildURL(_url+"&key=", cmd.after.key);
+          url = buildURL(_url+"&key=", cmd.after.key, config);
           requestURL(url, cmd.after.tts, function(j) {
             SARAH.speak(j.tts)
             if (data.key === "tvOn") {
               // on coupe le son pour éviter des interférences et bien comprendre la possible réponse
-              url = buildURL(_url+"&key=", "mute")
+              url = buildURL(_url+"&key=", "mute", config)
               requestURL(url);
             
               // pour tvOn on ajoute un askMe
@@ -76,6 +78,7 @@ exports.action = function(data, callback, config, SARAH){
                 "Oui zappe sur Arté": "7",
                 "Oui zappe sur BFM TV": "15",
                 "Oui zappe sur Canal plus": "4",
+                "Oui zappe sur Canal plusse": "4",
                 "Oui zappe sur Chérie": "25",
                 "Oui zappe sur Clubbing TV": "73",
                 "Oui zappe sur D17": "17",
@@ -92,8 +95,8 @@ exports.action = function(data, callback, config, SARAH){
                 "Oui zappe sur France 4": "14",
                 "Oui zappe sur France 5": "5",
                 "Oui zappe sur France O": "19",
-                "Oui zappe sur Game One": "118",
-                "Oui zappe sur Game One plus un": "66",
+                "Oui zappe sur Game One": "61",
+                "Oui zappe sur Game One plus un": "119",
                 "Oui zappe sur Gulli": "18",
                 "Oui zappe sur H dé un": "20",
                 "Oui zappe sur IDée F 1": "214",
@@ -101,6 +104,7 @@ exports.action = function(data, callback, config, SARAH){
                 "Oui zappe sur LCP": "13",
                 "Oui zappe sur La Chaine Parlementaire": "13",
                 "Oui zappe sur M6": "6",
+                "Oui zappe sur aime six": "6",
                 "Oui zappe sur 6 ter": "22",
                 "Oui zappe sur No Life": "123",
                 "Oui zappe sur NRJ 12": "12",
@@ -121,15 +125,15 @@ exports.action = function(data, callback, config, SARAH){
                 "non ça ira merci": "non"
               }, 8000, function(answer, end){
                 // on remet le son
-                url = buildURL(_url+"&key=", "mute");
+                url = buildURL(_url+"&key=", "mute", config);
                 requestURL(url)
                 // on regarde la réponse
                 if (answer === "non" || !answer) {
                   SARAH.speak("Très bien", end);
                 } else {
                   SARAH.speak("Je zappe sur la "+answer);
-                  url = buildURL(_url+'&long=false&key=', answer.split('').join('|'));
-                  requestURL(url, null, end)
+                  url = buildURL(_url+(config.freeboxv5?'':'&long=false')+'&key=', answer.split('').join('|'), config);
+                  setTimeout(function() { requestURL(url, null, end) }, 1200);
                 }
               });
             }
@@ -142,7 +146,7 @@ exports.action = function(data, callback, config, SARAH){
   }
   
   // Lorsqu'on désire zapper sur une chaine
-  url = buildURL(_url+'&long=false&key=', data.key.split('').join('|'));
+  url = buildURL(_url+(config.freeboxv5?'':'&long=false')+'&key=', data.key.split('').join('|'), config);
   if (data.msg) SARAH.speak(data.msg)
   requestURL(url, (data.msg?'':'Voilà'), callback)
 }
@@ -152,7 +156,7 @@ exports.action = function(data, callback, config, SARAH){
 // @param {String} url L'URL de base qui doit être utilisée avec le CODE télécommande
 // @param {String} keys La ou les clés à utiliser dans la commande
 // @return {Array} On va retourner un tableau d'URL à utiliser
-var buildURL = function(url, keys){
+var buildURL = function(url, keys, config){
   if (keys.length <= 0) { callback({'tts' : "Je n'ai pas compris"}); return; }
   // si la commande contient des '*' ça veut dire qu'on a plusieurs occurences pour la commande ciblée
   if (keys.indexOf('*') > -1) {
@@ -170,9 +174,11 @@ var buildURL = function(url, keys){
   var len = spl.length;
   if (len > 0) {
     var rUrl = [];
-    for (var i=0; i < len; i++) rUrl.push(url+spl[i])
+    for (var i=0; i < len; i++) {
+      rUrl.push(url+spl[i]+(config.freeboxv5==true?'&long='+(i+1 < len):''))
+    }
     return rUrl
-  } else return [ url+keys ]
+  } else return [ url+keys+(config.freeboxv5==true?'&long=false':'') ]
 }
 
 // Appelle une URL

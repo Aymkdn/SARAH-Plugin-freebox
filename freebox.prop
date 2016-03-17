@@ -2,8 +2,9 @@
   "modules" : { 
     "freebox"  : {
       "description": "Permet de commander la Freebox (voir la documentation).",
-      "version" : "4.3.1",
-      "code_telecommande": ""
+      "version" : "4.3.2",
+      "code_telecommande": "",
+      "freeboxv5": false
     }
   }
 }

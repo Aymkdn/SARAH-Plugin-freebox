@@ -55,7 +55,8 @@
       <item>zappe sur Ah Bé Un<tag>out.action.key="39";out.action.msg="je zappe sur AB1"</tag></item>
       <item>zappe sur Arté<tag>out.action.key="7";out.action.msg="je zappe sur Arte"</tag></item>
       <item>zappe sur BFM TV<tag>out.action.key="15";out.action.msg="je zappe sur BFM TV"</tag></item>
-      <item>zappe sur Canal plus<tag>out.action.key="4";out.action.msg="je zappe sur Canal plus"</tag></item>
+      <item>zappe sur Canal plus<tag>out.action.key="4";out.action.msg="je zappe sur Canal plusse"</tag></item>
+      <item>zappe sur Canal plusse<tag>out.action.key="4";out.action.msg="je zappe sur Canal plusse"</tag></item>
       <item>zappe sur Chérie<tag>out.action.key="25";out.action.msg="je zappe sur Chérie 25"</tag></item>
       <item>zappe sur Clubbing TV<tag>out.action.key="73";out.action.msg="je zappe sur Clubbing TV"</tag></item>
       <item>zappe sur Dé dix sept<tag>out.action.key="17";out.action.msg="je zappe sur D17";</tag></item>
@@ -71,8 +72,8 @@
       <item>zappe sur France quatre<tag>out.action.key="14";out.action.msg="je zappe sur France 4"</tag></item>
       <item>zappe sur France cinq<tag>out.action.key="5";out.action.msg="je zappe sur France 5"</tag></item>
       <item>zappe sur France Oh<tag>out.action.key="19";out.action.msg="je zappe sur France O"</tag></item>
-      <item>zappe sur Game One<tag>out.action.key="118";out.action.msg="je zappe sur Game One"</tag></item>
-      <item>zappe sur Game One plus un<tag>out.action.key="66";out.action.msg="je zappe sur Game One plus un"</tag></item>
+      <item>zappe sur Game One<tag>out.action.key="61";out.action.msg="je zappe sur Game One"</tag></item>
+      <item>zappe sur Game One plus un<tag>out.action.key="119";out.action.msg="je zappe sur Game One plus un"</tag></item>
       <item>zappe sur Gulli<tag>out.action.key="18";out.action.msg="je zappe sur Gulli"</tag></item>
       <item>zappe sur H dé un<tag>out.action.key="20";out.action.msg="je zappe sur HD1"</tag></item>
       <item>zappe sur IDée F un<tag>out.action.key="214";out.action.msg="je zappe sur IDF1"</tag></item>

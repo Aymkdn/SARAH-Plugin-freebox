@@ -1,6 +1,9 @@
 ChangeLog
 =========
 
+**v4.3.2 (17/Mars/2016)** :
+  - Compatibilité avec Freebox v5 en ajoutant un paramètre dans la configuration
+  
 **v4.3.1 (18/Août/2015)** :
   - Correction du changement de chaine après "Allume la télé" 
   
