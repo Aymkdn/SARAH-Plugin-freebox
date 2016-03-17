@@ -39,8 +39,9 @@ exports.action = function(data, callback, config, SARAH){
     return;
   }
   
-  config.freeboxv5 = (config.freeboxv5=="true" ? true : false);
-  
+  if (config.freeboxv5 === "true")  config.freeboxv5 = true;
+  if (config.freeboxv5 === "false") config.freeboxv5 = false;  
+
   // Si aucune "key" n'est passée, ça veut dire qu'on n'a pas reçu d'ordre
   if (!data.key){
     callback({ 'tts': '' });
