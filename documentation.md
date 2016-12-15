@@ -44,4 +44,41 @@ Par exemple si vous dites `zappe sur France 5 ` et que SARAH ne vous comprend pa
 
 Pour cela, ouvrir le fichier `replace_chaine.json` et s'inspirer des exemples présents.
 
+# Commandes Vocales
 
+  - `configurer la freebox` : pour la configuration initiale du plugin
+
+- `allume la freebox`
+- `allume la télé` : allume la Freebox et va en plus mettre la TV
+- `éteint la freebox`
+- `éteint la télé` : éteint la Freebox
+- `mets la télé` : se déplacer dans `Freebox TV`
+- `coupe le son de la freebox`
+- `remets le son de la freebox`
+- `baisse légèrement le son de la freebox`
+- `monte légèrement le son de la freebox`
+- `baisse le son de la freebox`
+- `monte le son de la freebox`
+- `augmente le son de la freebox`
+- `mets la freebox sur pause`
+- `mets le programme sur pause`
+- `remets la freebox en lecture`
+- `remets le programme en lecture`
+- `reviens au direct` : lorsque la Freebox TV a été mise sur pause
+- `va dans mes enregistrements` : SARAH va ouvrir "Mes Enregistrements" sur la télé
+- `va dans mes vidéos` : SARAH va ouvrir "Mes Vidéos" sur la télé
+- `trouve un dossier freebox` : parcourt tous les dossiers dans `Mes Vidéos` afin de trouver le dossier souhaité
+
+Autre commandes :
+- `freebox OK` : simule l'appui sur la touche "OK" de la télécommande
+- `freebox menu` : simule l'appui sur la touche "Free" de la télécommande
+- `freebox droit` : simule l'appui sur la touche "flèche droite" de la télécommande
+- `freebox gauche` : simule l'appui sur la touche "flèche gauche" de la télécommande
+- `freebox haut` : simule l'appui sur la touche "flèche du haut" de la télécommande
+- `freebox bas` : simule l'appui sur la touche "flèche du bas" de la télécommande
+- `freebox retour` : simule l'appui sur la touche "rouge" de la télécommande
+
+Mode spécial :
+- `active le mode freebox` / `passe en mode freebox` : permet de dire plusieurs commandes vocales à la suite sans énoncer avant `SARAH Freebox` ; les commandes sont :
+ - "OK", "Menu Freebox", "gauche", "droite", "retour", "descend", "bas", "monte", "haut", "chaine précédente", "chaine suivante"
+ - utiliser la commande `Merci ça sera tout` pour sortir de ce mode
