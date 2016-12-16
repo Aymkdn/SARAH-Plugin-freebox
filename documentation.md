@@ -36,6 +36,10 @@ Par exemple, supposons que vous voulez seulement une recherche parmis vos série
 
 À noter qu'il faudra prononcer le nom des dossiers *à la française* car c'est ainsi que SARAH va les comprendre. Par exemple pour `Game of Throne` il faudra prononcer quelque chose comme `guame off trone`.
 
+#### `use_Mon_Bouquet`
+
+À mettre à `true` si vous souhaitez que SARAH aille plutôt dans "Mon Bouquet" (vos chaines favorites) ou dans "Freebox TV" lorsque vous dites `allume la télé` ou `mets la télé`.
+
 ### Modifier les chaines TV
 
 Les chaines de TV sont automatiquement récupérées depuis le site de Free au démarrage de SARAH puis elles sont écrites dans le fichier `freebox.xml`. Cependant il peut arriver que SARAH comprenne mal votre prononcation de certaines chaines.
