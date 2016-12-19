@@ -357,7 +357,7 @@ freeboxPlugin.prototype.configure=function() {
         _this.saveConfig();
         pendingAutorization(body.result.track_id);
       } else {
-        _this.SARAH.speak("Il y a un problème...");
+        _this.SARAH.speak("Il y a eu un problème... Redites : SARAH, configurer la Freebox");
         console.log("[PLUGIN 'Freebox'] Erreur : ", body);
       }
     });
@@ -381,7 +381,7 @@ freeboxPlugin.prototype.configure=function() {
           break;
         }
         case "granted": {
-          _this.SARAH.speak("C'est bon, le pluguïn est configuré !");
+          _this.SARAH.speak("C'est bon, le pluguïn est configuré ! Vous pouvez commencer à l'utiliser.");
           _this.config.plugin_init=true;
           _this.saveConfig();
           break;

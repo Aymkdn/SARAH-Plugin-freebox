@@ -1,5 +1,3 @@
-(documentation pour la version v5 pas encore disponible)
-
 # Configurer le plugin
 
 Vous aurez besoin **d'avoir le code télécommande**. Pour le découvrir, voir ci-dessous :

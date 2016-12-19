@@ -1,7 +1,7 @@
 ChangeLog
 =========
 
-**v5.0 ()** :
+**v5.0 (19/Décembre/2016)** :
   - Réécriture de tout le code
   - Ajout d'un moyen de savoir si la Freebox est allumée
   - Refonte de la documentation
