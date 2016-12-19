@@ -224,7 +224,7 @@ freeboxPlugin.prototype.buildPlayerURL=function(keys){
 freeboxPlugin.prototype.requestURL=function(url, tts, after) {
   var u=url.shift();
   var _this=this;
-  //console.log("[PLUGIN 'Freebox' DEBUG] URL appelée => "+u);
+  console.log("[PLUGIN 'Freebox' DEBUG] URL appelée => "+u);
   _this.request({ 'uri': u }, function (err, response, json){
     if (err || response.statusCode != 200) {
       after.call(_this, false, err);
