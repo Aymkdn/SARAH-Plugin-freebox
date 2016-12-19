@@ -1,10 +1,14 @@
 {
-  "modules" : { 
+  "modules" : {
     "freebox"  : {
       "description": "Permet de commander la Freebox (voir la documentation).",
-      "version" : "4.3.2",
+      "version" : "5.0",
+      "search_path":"/Disque dur/Vidéos/",
       "code_telecommande": "",
-      "freeboxv5": false
+      "use_Mon_Bouquet":false,
+      "freebox_v5": false,
+      "plugin_init": false,
+      "app_token":""
     }
   }
 }

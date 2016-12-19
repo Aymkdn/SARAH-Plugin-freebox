@@ -5,98 +5,337 @@
     
     <item>Sarah</item>
     <one-of>
-      <item>allume la friboxe            <tag>out.action.key="on";</tag></item>
-  	  <item>éteint la friboxe            <tag>out.action.key="off";</tag></item>
+      <item>trouve un dossier freebox    <tag>out.action.key="findFolder";</tag></item>
+      <item>test la freebox              <tag>out.action.key="test";</tag></item>
+      <item>configurer la freebox        <tag>out.action.key="configuration";</tag></item>
+      <item>allume la freebox            <tag>out.action.key="on";</tag></item>
+  	  <item>éteint la freebox            <tag>out.action.key="off";</tag></item>
       <item>éteint la télé               <tag>out.action.key="off";</tag></item>
-      <item>état de la télé              <tag>out.action.key="etat";</tag></item>
       <item>allume la télé               <tag>out.action.key="tvOn";</tag></item>
-		  <item>mai la télé                 <tag>out.action.key="tv";</tag></item>
-      <item>coupe le son de la friboxe   <tag>out.action.key="mute";</tag></item>
-      <item>coupe le son sur la friboxe  <tag>out.action.key="mute";</tag></item>
-      <item>remets le son de la friboxe  <tag>out.action.key="muteOff";</tag></item>
-      <item>remets le son sur la friboxe <tag>out.action.key="muteOff";</tag></item>
-      <item>baisse légèrement le son de la friboxe  <tag>out.action.key="soundDownLight";</tag></item>
-      <item>baisse légèrement le son sur la friboxe <tag>out.action.key="soundDownLight";</tag></item>
-      <item>monte légèrement le son de la friboxe   <tag>out.action.key="soundUpLight";</tag></item>
-      <item>monte légèrement le son sur la friboxe  <tag>out.action.key="soundUpLight";</tag></item>
-      <item>baisse le son de la friboxe  <tag>out.action.key="soundDown";</tag></item>
-      <item>baisse le son sur la friboxe  <tag>out.action.key="soundDown";</tag></item>
-      <item>monte le son de la friboxe   <tag>out.action.key="soundUp";</tag></item>
-      <item>monte le son sur la friboxe  <tag>out.action.key="soundUp";</tag></item>
-      <item>augmente le son de la friboxe            <tag>out.action.key="soundUp";</tag></item>
-      <item>augmente le son sur la friboxe           <tag>out.action.key="soundUp";</tag></item>
-      <item>mets la friboxe sur pause    <tag>out.action.key="pause";</tag></item>
-      <item>mets sur pause la friboxe    <tag>out.action.key="pause";</tag></item>
+		  <item>mets la télé                 <tag>out.action.key="tv";</tag></item>
+      <item>coupe le son de la freebox   <tag>out.action.key="mute";</tag></item>
+      <item>coupe le son sur la freebox  <tag>out.action.key="mute";</tag></item>
+      <item>remets le son de la freebox  <tag>out.action.key="muteOff";</tag></item>
+      <item>remets le son sur la freebox <tag>out.action.key="muteOff";</tag></item>
+      <item>baisse légèrement le son de la freebox  <tag>out.action.key="soundDownLight";</tag></item>
+      <item>baisse légèrement le son sur la freebox <tag>out.action.key="soundDownLight";</tag></item>
+      <item>monte légèrement le son de la freebox   <tag>out.action.key="soundUpLight";</tag></item>
+      <item>monte légèrement le son sur la freebox  <tag>out.action.key="soundUpLight";</tag></item>
+      <item>baisse le son de la freebox  <tag>out.action.key="soundDown";</tag></item>
+      <item>baisse le son sur la freebox  <tag>out.action.key="soundDown";</tag></item>
+      <item>monte le son de la freebox   <tag>out.action.key="soundUp";</tag></item>
+      <item>monte le son sur la freebox  <tag>out.action.key="soundUp";</tag></item>
+      <item>augmente le son de la freebox            <tag>out.action.key="soundUp";</tag></item>
+      <item>augmente le son sur la freebox           <tag>out.action.key="soundUp";</tag></item>
+      <item>mets la freebox sur pause    <tag>out.action.key="pause";</tag></item>
+      <item>mets le programme sur pause    <tag>out.action.key="pause";</tag></item>
+      <item>mets sur pause la freebox    <tag>out.action.key="pause";</tag></item>
       <item>mets sur pause le programme  <tag>out.action.key="pause";</tag></item>
-      <item>mets la friboxe en lecture   <tag>out.action.key="play";</tag></item>
-      <item>remets la friboxe en lecture   <tag>out.action.key="play";</tag></item>
-      <item>mets en lecture la friboxe   <tag>out.action.key="play";</tag></item>
-      <item>remets en lecture la friboxe <tag>out.action.key="play";</tag></item>
+      <item>mets la freebox en lecture   <tag>out.action.key="play";</tag></item>
+      <item>remets la freebox en lecture   <tag>out.action.key="play";</tag></item>
+      <item>mets en lecture la freebox   <tag>out.action.key="play";</tag></item>
+      <item>remets en lecture la freebox <tag>out.action.key="play";</tag></item>
       <item>mets en lecture le programme <tag>out.action.key="play";</tag></item>
       <item>remets en lecture le programme          <tag>out.action.key="play";</tag></item>
       <item>mets le programme en lecture <tag>out.action.key="play";</tag></item>
       <item>remets le programme en lecture <tag>out.action.key="play";</tag></item>
       <item>reviens au direct            <tag>out.action.key="direct";</tag></item>
       <item>remets le direct             <tag>out.action.key="direct";</tag></item>
-      <item>les infos du programme       <tag>out.action.key="info";</tag></item>
-      <item>enlève les infos             <tag>out.action.key="infoOff";</tag></item>
-      <item>friboxe OK                   <tag>out.action.key="ok";</tag></item>
-      <item>friboxe menu                 <tag>out.action.key="home";</tag></item>
-      <item>friboxe droit                <tag>out.action.key="right";</tag></item>
-      <item>friboxe gauche               <tag>out.action.key="left";</tag></item>
-      <item>friboxe haut                 <tag>out.action.key="up";</tag></item>
-      <item>friboxe bas                  <tag>out.action.key="down";</tag></item>
-      <item>friboxe retour               <tag>out.action.key="back";</tag></item>
+      <item>freebox OK                   <tag>out.action.key="ok";</tag></item>
+      <item>freebox menu                 <tag>out.action.key="home";</tag></item>
+      <item>freebox droit                <tag>out.action.key="right";</tag></item>
+      <item>freebox gauche               <tag>out.action.key="left";</tag></item>
+      <item>freebox haut                 <tag>out.action.key="up";</tag></item>
+      <item>freebox bas                  <tag>out.action.key="down";</tag></item>
+      <item>freebox retour               <tag>out.action.key="back";</tag></item>
       <item>va dans mes enregistrements  <tag>out.action.key="enregistrements";</tag></item>
       <item>va dans mes vidéos           <tag>out.action.key="videos";</tag></item>
       <item>active le mode freebox<tag>out.action._attributes.context = "lazyfreebox.xml"</tag><tag>out.action._attributes.tts = "Mode Freebox activé. Dis. Merci ça sera tout. Pour en sortir."</tag></item>
       <item>passe en mode freebox<tag>out.action._attributes.context = "lazyfreebox.xml"</tag><tag>out.action._attributes.tts = "Mode Freebox activé. Je t'écoute !"</tag></item>
-
-      <item>zappe sur Ah Bé Un<tag>out.action.key="39";out.action.msg="je zappe sur AB1"</tag></item>
-      <item>zappe sur Arté<tag>out.action.key="7";out.action.msg="je zappe sur Arte"</tag></item>
-      <item>zappe sur BFM TV<tag>out.action.key="15";out.action.msg="je zappe sur BFM TV"</tag></item>
-      <item>zappe sur Canal plus<tag>out.action.key="4";out.action.msg="je zappe sur Canal plusse"</tag></item>
-      <item>zappe sur Canal plusse<tag>out.action.key="4";out.action.msg="je zappe sur Canal plusse"</tag></item>
-      <item>zappe sur Chérie<tag>out.action.key="25";out.action.msg="je zappe sur Chérie 25"</tag></item>
-      <item>zappe sur Clubbing TV<tag>out.action.key="73";out.action.msg="je zappe sur Clubbing TV"</tag></item>
-      <item>zappe sur Dé dix sept<tag>out.action.key="17";out.action.msg="je zappe sur D17";</tag></item>
-      <item>zappe sur Direct Star<tag>out.action.key="17";out.action.msg="je zappe sur D17";</tag></item>
-      <item>zappe sur Dé huit<tag>out.action.key="8";out.action.msg="je zappe sur D8"</tag></item>
-      <item>zappe sur Direct huit<tag>out.action.key="8";out.action.msg="je zappe sur D8"</tag></item>
-      <item>zappe sur Disney Channel<tag>out.action.key="48";out.action.msg="je zappe sur Disney Channel"</tag></item>
-      <item>zappe sur Euronews<tag>out.action.key="82";out.action.msg="je zappe sur Euronews"</tag></item>
-      <item>zappe sur L'équipe<tag>out.action.key="21";out.action.msg="je zappe sur l'équipe 21"</tag></item>
-      <item>zappe sur France deux<tag>out.action.key="2";out.action.msg="je zappe sur France 2"</tag></item>
-      <item>zappe sur France vingt quatre<tag>out.action.key="95";out.action.msg="je zappe sur France 24"</tag></item>
-      <item>zappe sur France trois<tag>out.action.key="3";out.action.msg="je zappe sur France 3"</tag></item>
-      <item>zappe sur France quatre<tag>out.action.key="14";out.action.msg="je zappe sur France 4"</tag></item>
-      <item>zappe sur France cinq<tag>out.action.key="5";out.action.msg="je zappe sur France 5"</tag></item>
-      <item>zappe sur France Oh<tag>out.action.key="19";out.action.msg="je zappe sur France O"</tag></item>
-      <item>zappe sur Game One<tag>out.action.key="61";out.action.msg="je zappe sur Game One"</tag></item>
-      <item>zappe sur Game One plus un<tag>out.action.key="119";out.action.msg="je zappe sur Game One plus un"</tag></item>
-      <item>zappe sur Gulli<tag>out.action.key="18";out.action.msg="je zappe sur Gulli"</tag></item>
-      <item>zappe sur H dé un<tag>out.action.key="20";out.action.msg="je zappe sur HD1"</tag></item>
-      <item>zappe sur IDée F un<tag>out.action.key="214";out.action.msg="je zappe sur IDF1"</tag></item>
-      <item>zappe sur I-Télé<tag>out.action.key="16";out.action.msg="je zappe sur I-Télé"</tag></item>
-      <item>zappe sur LCP<tag>out.action.key="13";out.action.msg="je zappe sur LCP"</tag></item>
-      <item>zappe sur La Chaine Parlementaire<tag>out.action.key="13";out.action.msg="je zappe sur LCP"</tag></item>
-      <item>zappe sur M six<tag>out.action.key="6";out.action.msg="je zappe sur M6"</tag></item>
-      <item>zappe sur six terre<tag>out.action.key="22";out.action.msg="je zappe sur 6 ter"</tag></item>
-      <item>zappe sur No Life<tag>out.action.key="123";out.action.msg="je zappe sur No Life"</tag></item>
-      <item>zappe sur énergie douze<tag>out.action.key="12";out.action.msg="je zappe sur NRJ 12"</tag></item>
-      <item>zappe sur énergie Hit<tag>out.action.key="65";out.action.msg="je zappe sur NRJ Hits"</tag></item>
-      <item>zappe sur énergie Hitse<tag>out.action.key="65";out.action.msg="je zappe sur NRJ Hits"</tag></item>
-      <item>zappe sur haine Thé un<tag>out.action.key="11";out.action.msg="je zappe sur NT1"</tag></item>
-      <item>zappe sur Numéro vingt trois<tag>out.action.key="23";out.action.msg="je zappe sur Numéro 23"</tag></item>
-      <item>zappe sur R M C<tag>out.action.key="24";out.action.msg="je zappe sur RMC Découverte"</tag></item>
-      <item>zappe sur RMC Découverte<tag>out.action.key="24";out.action.msg="je zappe sur RMC Découverte"</tag></item>
-      <item>zappe sur RTL neuf<tag>out.action.key="28";out.action.msg="je zappe sur RTL9"</tag></item>
-      <item>zappe sur Thé F un<tag>out.action.key="1";out.action.msg="je zappe sur TF1"</tag></item>
+      
+      <!-- -chainesStart- Ci-dessous les chaines générées automatiquement -->
+      <item>zappe sur TF1<tag>out.action.key="1";out.action.msg="je zappe sur TF1"</tag></item>
+      <item>zappe sur France 2 <tag>out.action.key="2";out.action.msg="je zappe sur France 2 "</tag></item>
+      <item>zappe sur France 3<tag>out.action.key="3";out.action.msg="je zappe sur France 3"</tag></item>
+      <item>zappe sur CANAL plus<tag>out.action.key="4";out.action.msg="je zappe sur CANAL plus"</tag></item>
+      <item>zappe sur France cinq<tag>out.action.key="5";out.action.msg="je zappe sur France cinq"</tag></item>
+      <item>zappe sur M6 <tag>out.action.key="6";out.action.msg="je zappe sur M6 "</tag></item>
+      <item>zappe sur Arte <tag>out.action.key="7";out.action.msg="je zappe sur Arte "</tag></item>
+      <item>zappe sur C8<tag>out.action.key="8";out.action.msg="je zappe sur C8"</tag></item>
+      <item>zappe sur W neuf<tag>out.action.key="9";out.action.msg="je zappe sur W neuf"</tag></item>
       <item>zappe sur TMC<tag>out.action.key="10";out.action.msg="je zappe sur TMC"</tag></item>
-      <item>zappe sur Virgine Radio tévé<tag>out.action.key="77";out.action.msg="je zappe sur Virgine Radio tévé"</tag></item>
-      <item>zappe sur TV cinq<tag>out.action.key="79";out.action.msg="je zappe sur TV5 Monde"</tag></item>
-      <item>zappe sur Vivolta<tag>out.action.key="38";out.action.msg="je zappe sur Vivolta"</tag></item>
-      <item>zappe sur W neuf<tag>out.action.key="9";out.action.msg="je zappe sur W9"</tag></item>
+      <item>zappe sur NT1<tag>out.action.key="11";out.action.msg="je zappe sur NT1"</tag></item>
+      <item>zappe sur NRJ 12 <tag>out.action.key="12";out.action.msg="je zappe sur NRJ 12 "</tag></item>
+      <item>zappe sur LCP<tag>out.action.key="13";out.action.msg="je zappe sur LCP"</tag></item>
+      <item>zappe sur France 4 <tag>out.action.key="14";out.action.msg="je zappe sur France 4 "</tag></item>
+      <item>zappe sur BFM TV <tag>out.action.key="15";out.action.msg="je zappe sur BFM TV "</tag></item>
+      <item>zappe sur i-télé<tag>out.action.key="16";out.action.msg="je zappe sur i-télé"</tag></item>
+      <item>zappe sur C STAR<tag>out.action.key="17";out.action.msg="je zappe sur C STAR"</tag></item>
+      <item>zappe sur Gulli<tag>out.action.key="18";out.action.msg="je zappe sur Gulli"</tag></item>
+      <item>zappe sur France ô<tag>out.action.key="19";out.action.msg="je zappe sur France ô"</tag></item>
+      <item>zappe sur HD1<tag>out.action.key="20";out.action.msg="je zappe sur HD1"</tag></item>
+      <item>zappe sur L'Equipe 21<tag>out.action.key="21";out.action.msg="je zappe sur L'Equipe 21"</tag></item>
+      <item>zappe sur 6Ter<tag>out.action.key="22";out.action.msg="je zappe sur 6Ter"</tag></item>
+      <item>zappe sur Numero23<tag>out.action.key="23";out.action.msg="je zappe sur Numero23"</tag></item>
+      <item>zappe sur Rmc Decouverte<tag>out.action.key="24";out.action.msg="je zappe sur Rmc Decouverte"</tag></item>
+      <item>zappe sur Cherie 25<tag>out.action.key="25";out.action.msg="je zappe sur Cherie 25"</tag></item>
+      <item>zappe sur elle sait hi<tag>out.action.key="26";out.action.msg="je zappe sur elle sait hi"</tag></item>
+      <item>zappe sur FranceInfo<tag>out.action.key="27";out.action.msg="je zappe sur FranceInfo"</tag></item>
+      <item>zappe sur Paris Première<tag>out.action.key="28";out.action.msg="je zappe sur Paris Première"</tag></item>
+      <item>zappe sur RTL9<tag>out.action.key="29";out.action.msg="je zappe sur RTL9"</tag></item>
+      <item>zappe sur EUROSPORT 1<tag>out.action.key="34";out.action.msg="je zappe sur EUROSPORT 1"</tag></item>
+      <item>zappe sur EUROSPORT 2<tag>out.action.key="35";out.action.msg="je zappe sur EUROSPORT 2"</tag></item>
+      <item>zappe sur QVC<tag>out.action.key="36";out.action.msg="je zappe sur QVC"</tag></item>
+      <item>zappe sur Game One<tag>out.action.key="37";out.action.msg="je zappe sur Game One"</tag></item>
+      <item>zappe sur Téva<tag>out.action.key="38";out.action.msg="je zappe sur Téva"</tag></item>
+      <item>zappe sur ah bé un<tag>out.action.key="39";out.action.msg="je zappe sur ah bé un"</tag></item>
+      <item>zappe sur Disney Channel<tag>out.action.key="48";out.action.msg="je zappe sur Disney Channel"</tag></item>
+      <item>zappe sur Disney Channel  plus 1<tag>out.action.key="49";out.action.msg="je zappe sur Disney Channel  plus 1"</tag></item>
+      <item>zappe sur Paramount Channel<tag>out.action.key="58";out.action.msg="je zappe sur Paramount Channel"</tag></item>
+      <item>zappe sur PLANETE plus<tag>out.action.key="59";out.action.msg="je zappe sur PLANETE plus"</tag></item>
+      <item>zappe sur National Geographic Channel<tag>out.action.key="60";out.action.msg="je zappe sur National Geographic Channel"</tag></item>
+      <item>zappe sur Nat Geo Wild<tag>out.action.key="61";out.action.msg="je zappe sur Nat Geo Wild"</tag></item>
+      <item>zappe sur Voyage<tag>out.action.key="62";out.action.msg="je zappe sur Voyage"</tag></item>
+      <item>zappe sur E<tag>out.action.key="63";out.action.msg="je zappe sur E"</tag></item>
+      <item>zappe sur M6 Music<tag>out.action.key="64";out.action.msg="je zappe sur M6 Music"</tag></item>
+      <item>zappe sur NRJ Hits <tag>out.action.key="65";out.action.msg="je zappe sur NRJ Hits "</tag></item>
+      <item>zappe sur MTV Hits<tag>out.action.key="66";out.action.msg="je zappe sur MTV Hits"</tag></item>
+      <item>zappe sur TRACE Urban<tag>out.action.key="67";out.action.msg="je zappe sur TRACE Urban"</tag></item>
+      <item>zappe sur Vivolta<tag>out.action.key="69";out.action.msg="je zappe sur Vivolta"</tag></item>
+      <item>zappe sur TV5<tag>out.action.key="70";out.action.msg="je zappe sur TV5"</tag></item>
+      <item>zappe sur TV BREIZH<tag>out.action.key="71";out.action.msg="je zappe sur TV BREIZH"</tag></item>
+      <item>zappe sur Festival 4k<tag>out.action.key="72";out.action.msg="je zappe sur Festival 4k"</tag></item>
+      <item>zappe sur COMEDIE  plus<tag>out.action.key="80";out.action.msg="je zappe sur COMEDIE  plus"</tag></item>
+      <item>zappe sur 13EME RUE<tag>out.action.key="81";out.action.msg="je zappe sur 13EME RUE"</tag></item>
+      <item>zappe sur SYFY<tag>out.action.key="82";out.action.msg="je zappe sur SYFY"</tag></item>
+      <item>zappe sur SERIE CLUB<tag>out.action.key="83";out.action.msg="je zappe sur SERIE CLUB"</tag></item>
+      <item>zappe sur MTV<tag>out.action.key="84";out.action.msg="je zappe sur MTV"</tag></item>
+      <item>zappe sur ELLE Girl<tag>out.action.key="85";out.action.msg="je zappe sur ELLE Girl"</tag></item>
+      <item>zappe sur NON STOP PEOPLE<tag>out.action.key="86";out.action.msg="je zappe sur NON STOP PEOPLE"</tag></item>
+      <item>zappe sur MCM<tag>out.action.key="87";out.action.msg="je zappe sur MCM"</tag></item>
+      <item>zappe sur J-ONE<tag>out.action.key="88";out.action.msg="je zappe sur J-ONE"</tag></item>
+      <item>zappe sur Game One  plus 1<tag>out.action.key="89";out.action.msg="je zappe sur Game One  plus 1"</tag></item>
+      <item>zappe sur Mangas<tag>out.action.key="90";out.action.msg="je zappe sur Mangas"</tag></item>
+      <item>zappe sur BET<tag>out.action.key="91";out.action.msg="je zappe sur BET"</tag></item>
+      <item>zappe sur Enorme TV<tag>out.action.key="92";out.action.msg="je zappe sur Enorme TV"</tag></item>
+      <item>zappe sur Nolife<tag>out.action.key="93";out.action.msg="je zappe sur Nolife"</tag></item>
+      <item>zappe sur GONG<tag>out.action.key="94";out.action.msg="je zappe sur GONG"</tag></item>
+      <item>zappe sur Ginx<tag>out.action.key="97";out.action.msg="je zappe sur Ginx"</tag></item>
+      <item>zappe sur VICELAND<tag>out.action.key="98";out.action.msg="je zappe sur VICELAND"</tag></item>
+      <item>zappe sur Paramount Channel Decale<tag>out.action.key="117";out.action.msg="je zappe sur Paramount Channel Decale"</tag></item>
+      <item>zappe sur Disney Junior<tag>out.action.key="140";out.action.msg="je zappe sur Disney Junior"</tag></item>
+      <item>zappe sur NICKELODEON JR<tag>out.action.key="141";out.action.msg="je zappe sur NICKELODEON JR"</tag></item>
+      <item>zappe sur TIJI<tag>out.action.key="142";out.action.msg="je zappe sur TIJI"</tag></item>
+      <item>zappe sur Piwi<tag>out.action.key="143";out.action.msg="je zappe sur Piwi"</tag></item>
+      <item>zappe sur Boomerang<tag>out.action.key="144";out.action.msg="je zappe sur Boomerang"</tag></item>
+      <item>zappe sur CARTOON NETWORK<tag>out.action.key="146";out.action.msg="je zappe sur CARTOON NETWORK"</tag></item>
+      <item>zappe sur NICKELODEON<tag>out.action.key="147";out.action.msg="je zappe sur NICKELODEON"</tag></item>
+      <item>zappe sur DISNEY XD<tag>out.action.key="148";out.action.msg="je zappe sur DISNEY XD"</tag></item>
+      <item>zappe sur CANAL J<tag>out.action.key="149";out.action.msg="je zappe sur CANAL J"</tag></item>
+      <item>zappe sur Télétoon<tag>out.action.key="150";out.action.msg="je zappe sur Télétoon"</tag></item>
+      <item>zappe sur TELETOON  plus 1<tag>out.action.key="151";out.action.msg="je zappe sur TELETOON  plus 1"</tag></item>
+      <item>zappe sur NICKELODEON 4TEEN<tag>out.action.key="152";out.action.msg="je zappe sur NICKELODEON 4TEEN"</tag></item>
+      <item>zappe sur Boing<tag>out.action.key="153";out.action.msg="je zappe sur Boing"</tag></item>
+      <item>zappe sur INFOSPORT plus<tag>out.action.key="170";out.action.msg="je zappe sur INFOSPORT plus"</tag></item>
+      <item>zappe sur OM TV<tag>out.action.key="171";out.action.msg="je zappe sur OM TV"</tag></item>
+      <item>zappe sur oh elle tévé<tag>out.action.key="172";out.action.msg="je zappe sur oh elle tévé"</tag></item>
+      <item>zappe sur ONZEO<tag>out.action.key="173";out.action.msg="je zappe sur ONZEO"</tag></item>
+      <item>zappe sur GIRONDINS TV<tag>out.action.key="174";out.action.msg="je zappe sur GIRONDINS TV"</tag></item>
+      <item>zappe sur AB Moteurs<tag>out.action.key="175";out.action.msg="je zappe sur AB Moteurs"</tag></item>
+      <item>zappe sur Equidia Live<tag>out.action.key="176";out.action.msg="je zappe sur Equidia Live"</tag></item>
+      <item>zappe sur Equidia Life<tag>out.action.key="177";out.action.msg="je zappe sur Equidia Life"</tag></item>
+      <item>zappe sur sport365<tag>out.action.key="180";out.action.msg="je zappe sur sport365"</tag></item>
+      <item>zappe sur PLANETE plus  CI<tag>out.action.key="200";out.action.msg="je zappe sur PLANETE plus  CI"</tag></item>
+      <item>zappe sur PLANETE plus  A et E<tag>out.action.key="201";out.action.msg="je zappe sur PLANETE plus  A et E"</tag></item>
+      <item>zappe sur Discovery Channel<tag>out.action.key="202";out.action.msg="je zappe sur Discovery Channel"</tag></item>
+      <item>zappe sur Discovery Science<tag>out.action.key="203";out.action.msg="je zappe sur Discovery Science"</tag></item>
+      <item>zappe sur Ushuaïa TV<tag>out.action.key="204";out.action.msg="je zappe sur Ushuaïa TV"</tag></item>
+      <item>zappe sur Histoire<tag>out.action.key="205";out.action.msg="je zappe sur Histoire"</tag></item>
+      <item>zappe sur Toute l'Histoire<tag>out.action.key="206";out.action.msg="je zappe sur Toute l'Histoire"</tag></item>
+      <item>zappe sur Sciences et Vie TV<tag>out.action.key="207";out.action.msg="je zappe sur Sciences et Vie TV"</tag></item>
+      <item>zappe sur Aerostar TV<tag>out.action.key="210";out.action.msg="je zappe sur Aerostar TV"</tag></item>
+      <item>zappe sur Souvenirs from Earth<tag>out.action.key="211";out.action.msg="je zappe sur Souvenirs from Earth"</tag></item>
+      <item>zappe sur ikonoTV<tag>out.action.key="212";out.action.msg="je zappe sur ikonoTV"</tag></item>
+      <item>zappe sur LA CHAINE METEO<tag>out.action.key="230";out.action.msg="je zappe sur LA CHAINE METEO"</tag></item>
+      <item>zappe sur Campagnes TV<tag>out.action.key="231";out.action.msg="je zappe sur Campagnes TV"</tag></item>
+      <item>zappe sur M6 Boutique<tag>out.action.key="232";out.action.msg="je zappe sur M6 Boutique"</tag></item>
+      <item>zappe sur Best of Shopping<tag>out.action.key="233";out.action.msg="je zappe sur Best of Shopping"</tag></item>
+      <item>zappe sur Luxe.TV HD<tag>out.action.key="234";out.action.msg="je zappe sur Luxe.TV HD"</tag></item>
+      <item>zappe sur Astro Center TV<tag>out.action.key="235";out.action.msg="je zappe sur Astro Center TV"</tag></item>
+      <item>zappe sur Demain<tag>out.action.key="236";out.action.msg="je zappe sur Demain"</tag></item>
+      <item>zappe sur MCE<tag>out.action.key="237";out.action.msg="je zappe sur MCE"</tag></item>
+      <item>zappe sur Men's Up<tag>out.action.key="238";out.action.msg="je zappe sur Men's Up"</tag></item>
+      <item>zappe sur Ouatch TV<tag>out.action.key="239";out.action.msg="je zappe sur Ouatch TV"</tag></item>
+      <item>zappe sur World Fashion<tag>out.action.key="240";out.action.msg="je zappe sur World Fashion"</tag></item>
+      <item>zappe sur Fashion TV<tag>out.action.key="241";out.action.msg="je zappe sur Fashion TV"</tag></item>
+      <item>zappe sur Lucky Jack HD<tag>out.action.key="244";out.action.msg="je zappe sur Lucky Jack HD"</tag></item>
+      <item>zappe sur KTO<tag>out.action.key="245";out.action.msg="je zappe sur KTO"</tag></item>
+      <item>zappe sur Star 24<tag>out.action.key="247";out.action.msg="je zappe sur Star 24"</tag></item>
+      <item>zappe sur RFM TV<tag>out.action.key="261";out.action.msg="je zappe sur RFM TV"</tag></item>
+      <item>zappe sur Djazz.Tv<tag>out.action.key="265";out.action.msg="je zappe sur Djazz.Tv"</tag></item>
+      <item>zappe sur BeBlack<tag>out.action.key="266";out.action.msg="je zappe sur BeBlack"</tag></item>
+      <item>zappe sur J4T<tag>out.action.key="267";out.action.msg="je zappe sur J4T"</tag></item>
+      <item>zappe sur O Five<tag>out.action.key="268";out.action.msg="je zappe sur O Five"</tag></item>
+      <item>zappe sur Clubbing TV <tag>out.action.key="269";out.action.msg="je zappe sur Clubbing TV "</tag></item>
+      <item>zappe sur Virgin Radio TV<tag>out.action.key="270";out.action.msg="je zappe sur Virgin Radio TV"</tag></item>
+      <item>zappe sur France 3 Alpes<tag>out.action.key="302";out.action.msg="je zappe sur France 3 Alpes"</tag></item>
+      <item>zappe sur France 3 Alsace<tag>out.action.key="303";out.action.msg="je zappe sur France 3 Alsace"</tag></item>
+      <item>zappe sur France 3 Aquitaine<tag>out.action.key="304";out.action.msg="je zappe sur France 3 Aquitaine"</tag></item>
+      <item>zappe sur France 3 Auvergne<tag>out.action.key="305";out.action.msg="je zappe sur France 3 Auvergne"</tag></item>
+      <item>zappe sur France 3 Basse-Normandie<tag>out.action.key="306";out.action.msg="je zappe sur France 3 Basse-Normandie"</tag></item>
+      <item>zappe sur France 3 Bourgogne<tag>out.action.key="307";out.action.msg="je zappe sur France 3 Bourgogne"</tag></item>
+      <item>zappe sur France 3 Bretagne<tag>out.action.key="308";out.action.msg="je zappe sur France 3 Bretagne"</tag></item>
+      <item>zappe sur France 3 Centre<tag>out.action.key="309";out.action.msg="je zappe sur France 3 Centre"</tag></item>
+      <item>zappe sur France 3 Champagne-Ardenne<tag>out.action.key="310";out.action.msg="je zappe sur France 3 Champagne-Ardenne"</tag></item>
+      <item>zappe sur France 3 Corse Via Stella<tag>out.action.key="311";out.action.msg="je zappe sur France 3 Corse Via Stella"</tag></item>
+      <item>zappe sur France 3 Côte-d'Azur<tag>out.action.key="312";out.action.msg="je zappe sur France 3 Côte-d'Azur"</tag></item>
+      <item>zappe sur France 3 F-Comté<tag>out.action.key="313";out.action.msg="je zappe sur France 3 F-Comté"</tag></item>
+      <item>zappe sur France 3 Haute-Normandie<tag>out.action.key="314";out.action.msg="je zappe sur France 3 Haute-Normandie"</tag></item>
+      <item>zappe sur France 3 Languedoc-Roussillon<tag>out.action.key="315";out.action.msg="je zappe sur France 3 Languedoc-Roussillon"</tag></item>
+      <item>zappe sur France 3 Limousin<tag>out.action.key="316";out.action.msg="je zappe sur France 3 Limousin"</tag></item>
+      <item>zappe sur France 3 Lorraine<tag>out.action.key="317";out.action.msg="je zappe sur France 3 Lorraine"</tag></item>
+      <item>zappe sur France 3 Midi Pyrénnées<tag>out.action.key="318";out.action.msg="je zappe sur France 3 Midi Pyrénnées"</tag></item>
+      <item>zappe sur France 3 Nord Pas-de-Calais<tag>out.action.key="319";out.action.msg="je zappe sur France 3 Nord Pas-de-Calais"</tag></item>
+      <item>zappe sur France 3 Paris IdF<tag>out.action.key="320";out.action.msg="je zappe sur France 3 Paris IdF"</tag></item>
+      <item>zappe sur France 3 Pays Loire<tag>out.action.key="321";out.action.msg="je zappe sur France 3 Pays Loire"</tag></item>
+      <item>zappe sur France 3 Picardie<tag>out.action.key="322";out.action.msg="je zappe sur France 3 Picardie"</tag></item>
+      <item>zappe sur France 3 Poitou-C.<tag>out.action.key="323";out.action.msg="je zappe sur France 3 Poitou-C."</tag></item>
+      <item>zappe sur France 3 Prov.-Alpes<tag>out.action.key="324";out.action.msg="je zappe sur France 3 Prov.-Alpes"</tag></item>
+      <item>zappe sur France 3 Rhône-Alpes<tag>out.action.key="325";out.action.msg="je zappe sur France 3 Rhône-Alpes"</tag></item>
+      <item>zappe sur France 24<tag>out.action.key="340";out.action.msg="je zappe sur France 24"</tag></item>
+      <item>zappe sur France 24 Anglais<tag>out.action.key="341";out.action.msg="je zappe sur France 24 Anglais"</tag></item>
+      <item>zappe sur France 24 Arabe<tag>out.action.key="342";out.action.msg="je zappe sur France 24 Arabe"</tag></item>
+      <item>zappe sur LCP AN 24h<tag>out.action.key="343";out.action.msg="je zappe sur LCP AN 24h"</tag></item>
+      <item>zappe sur Public Sénat 24h<tag>out.action.key="344";out.action.msg="je zappe sur Public Sénat 24h"</tag></item>
+      <item>zappe sur Euronews<tag>out.action.key="345";out.action.msg="je zappe sur Euronews"</tag></item>
+      <item>zappe sur BFM Business<tag>out.action.key="347";out.action.msg="je zappe sur BFM Business"</tag></item>
+      <item>zappe sur BBC WORLD NEWS<tag>out.action.key="349";out.action.msg="je zappe sur BBC WORLD NEWS"</tag></item>
+      <item>zappe sur Sky News Int.<tag>out.action.key="350";out.action.msg="je zappe sur Sky News Int."</tag></item>
+      <item>zappe sur CNN<tag>out.action.key="351";out.action.msg="je zappe sur CNN"</tag></item>
+      <item>zappe sur Bloomberg TV<tag>out.action.key="353";out.action.msg="je zappe sur Bloomberg TV"</tag></item>
+      <item>zappe sur CNBC<tag>out.action.key="354";out.action.msg="je zappe sur CNBC"</tag></item>
+      <item>zappe sur Al Jazeera Int.<tag>out.action.key="355";out.action.msg="je zappe sur Al Jazeera Int."</tag></item>
+      <item>zappe sur Africa 24<tag>out.action.key="356";out.action.msg="je zappe sur Africa 24"</tag></item>
+      <item>zappe sur i24 News<tag>out.action.key="357";out.action.msg="je zappe sur i24 News"</tag></item>
+      <item>zappe sur Penthouse HD<tag>out.action.key="374";out.action.msg="je zappe sur Penthouse HD"</tag></item>
+      <item>zappe sur God TV<tag>out.action.key="420";out.action.msg="je zappe sur God TV"</tag></item>
+      <item>zappe sur Noursat<tag>out.action.key="421";out.action.msg="je zappe sur Noursat"</tag></item>
+      <item>zappe sur DayStar<tag>out.action.key="422";out.action.msg="je zappe sur DayStar"</tag></item>
+      <item>zappe sur UbizNews<tag>out.action.key="430";out.action.msg="je zappe sur UbizNews"</tag></item>
+      <item>zappe sur TPA<tag>out.action.key="432";out.action.msg="je zappe sur TPA"</tag></item>
+      <item>zappe sur HLive<tag>out.action.key="434";out.action.msg="je zappe sur HLive"</tag></item>
+      <item>zappe sur SUD1ere<tag>out.action.key="470";out.action.msg="je zappe sur SUD1ere"</tag></item>
+      <item>zappe sur TeleKreol<tag>out.action.key="474";out.action.msg="je zappe sur TeleKreol"</tag></item>
+      <item>zappe sur Vox Africa - Panafrique<tag>out.action.key="475";out.action.msg="je zappe sur Vox Africa - Panafrique"</tag></item>
+      <item>zappe sur MBOA TV<tag>out.action.key="478";out.action.msg="je zappe sur MBOA TV"</tag></item>
+      <item>zappe sur LBC Sat<tag>out.action.key="479";out.action.msg="je zappe sur LBC Sat"</tag></item>
+      <item>zappe sur Medi1TV<tag>out.action.key="480";out.action.msg="je zappe sur Medi1TV"</tag></item>
+      <item>zappe sur Canal Algérie<tag>out.action.key="481";out.action.msg="je zappe sur Canal Algérie"</tag></item>
+      <item>zappe sur Algerie 3<tag>out.action.key="482";out.action.msg="je zappe sur Algerie 3"</tag></item>
+      <item>zappe sur Algerie 5<tag>out.action.key="483";out.action.msg="je zappe sur Algerie 5"</tag></item>
+      <item>zappe sur Tamazight TV4<tag>out.action.key="484";out.action.msg="je zappe sur Tamazight TV4"</tag></item>
+      <item>zappe sur Al Erth Al Nabawy<tag>out.action.key="485";out.action.msg="je zappe sur Al Erth Al Nabawy"</tag></item>
+      <item>zappe sur Beur TV<tag>out.action.key="486";out.action.msg="je zappe sur Beur TV"</tag></item>
+      <item>zappe sur Arirang<tag>out.action.key="516";out.action.msg="je zappe sur Arirang"</tag></item>
+      <item>zappe sur TV Romania<tag>out.action.key="521";out.action.msg="je zappe sur TV Romania"</tag></item>
+      <item>zappe sur Telesur<tag>out.action.key="531";out.action.msg="je zappe sur Telesur"</tag></item>
+      <item>zappe sur Rai Uno<tag>out.action.key="543";out.action.msg="je zappe sur Rai Uno"</tag></item>
+      <item>zappe sur Rai Due<tag>out.action.key="544";out.action.msg="je zappe sur Rai Due"</tag></item>
+      <item>zappe sur Rai Tre<tag>out.action.key="545";out.action.msg="je zappe sur Rai Tre"</tag></item>
+      <item>zappe sur Numidia TV<tag>out.action.key="550";out.action.msg="je zappe sur Numidia TV"</tag></item>
+      <item>zappe sur Tamazight TV<tag>out.action.key="552";out.action.msg="je zappe sur Tamazight TV"</tag></item>
+      <item>zappe sur Almagharibia<tag>out.action.key="553";out.action.msg="je zappe sur Almagharibia"</tag></item>
+      <item>zappe sur IMED TV<tag>out.action.key="554";out.action.msg="je zappe sur IMED TV"</tag></item>
+      <item>zappe sur Echorouk TV<tag>out.action.key="556";out.action.msg="je zappe sur Echorouk TV"</tag></item>
+      <item>zappe sur Ulusal Kanal<tag>out.action.key="557";out.action.msg="je zappe sur Ulusal Kanal"</tag></item>
+      <item>zappe sur Arriyadia<tag>out.action.key="558";out.action.msg="je zappe sur Arriyadia"</tag></item>
+      <item>zappe sur Canal Atlas<tag>out.action.key="559";out.action.msg="je zappe sur Canal Atlas"</tag></item>
+      <item>zappe sur 2M Maroc<tag>out.action.key="564";out.action.msg="je zappe sur 2M Maroc"</tag></item>
+      <item>zappe sur TVM Europe<tag>out.action.key="565";out.action.msg="je zappe sur TVM Europe"</tag></item>
+      <item>zappe sur El Hiwar Ettounsi<tag>out.action.key="566";out.action.msg="je zappe sur El Hiwar Ettounsi"</tag></item>
+      <item>zappe sur Television Tunisienne<tag>out.action.key="567";out.action.msg="je zappe sur Television Tunisienne"</tag></item>
+      <item>zappe sur Al Masriya<tag>out.action.key="568";out.action.msg="je zappe sur Al Masriya"</tag></item>
+      <item>zappe sur Al Jazeera<tag>out.action.key="569";out.action.msg="je zappe sur Al Jazeera"</tag></item>
+      <item>zappe sur Power Türk TV<tag>out.action.key="582";out.action.msg="je zappe sur Power Türk TV"</tag></item>
+      <item>zappe sur TRT 1<tag>out.action.key="583";out.action.msg="je zappe sur TRT 1"</tag></item>
+      <item>zappe sur TRT Coçuk<tag>out.action.key="586";out.action.msg="je zappe sur TRT Coçuk"</tag></item>
+      <item>zappe sur 360 TV<tag>out.action.key="587";out.action.msg="je zappe sur 360 TV"</tag></item>
+      <item>zappe sur 24 TV<tag>out.action.key="589";out.action.msg="je zappe sur 24 TV"</tag></item>
+      <item>zappe sur TRT Türk<tag>out.action.key="590";out.action.msg="je zappe sur TRT Türk"</tag></item>
+      <item>zappe sur Kanal 7 Avrupa<tag>out.action.key="591";out.action.msg="je zappe sur Kanal 7 Avrupa"</tag></item>
+      <item>zappe sur Samanyolu TV Avrupa<tag>out.action.key="592";out.action.msg="je zappe sur Samanyolu TV Avrupa"</tag></item>
+      <item>zappe sur TVT<tag>out.action.key="593";out.action.msg="je zappe sur TVT"</tag></item>
+      <item>zappe sur Hilal TV<tag>out.action.key="594";out.action.msg="je zappe sur Hilal TV"</tag></item>
+      <item>zappe sur TV5 Turkey<tag>out.action.key="595";out.action.msg="je zappe sur TV5 Turkey"</tag></item>
+      <item>zappe sur Halk TV<tag>out.action.key="600";out.action.msg="je zappe sur Halk TV"</tag></item>
+      <item>zappe sur VTV4<tag>out.action.key="606";out.action.msg="je zappe sur VTV4"</tag></item>
+      <item>zappe sur Arte DE<tag>out.action.key="616";out.action.msg="je zappe sur Arte DE"</tag></item>
+      <item>zappe sur DW-TV<tag>out.action.key="617";out.action.msg="je zappe sur DW-TV"</tag></item>
+      <item>zappe sur RTPi<tag>out.action.key="637";out.action.msg="je zappe sur RTPi"</tag></item>
+      <item>zappe sur Kuwait TV1<tag>out.action.key="640";out.action.msg="je zappe sur Kuwait TV1"</tag></item>
+      <item>zappe sur Yemen TV<tag>out.action.key="643";out.action.msg="je zappe sur Yemen TV"</tag></item>
+      <item>zappe sur Dubai TV<tag>out.action.key="644";out.action.msg="je zappe sur Dubai TV"</tag></item>
+      <item>zappe sur Abou Dhabi TV<tag>out.action.key="645";out.action.msg="je zappe sur Abou Dhabi TV"</tag></item>
+      <item>zappe sur Jordan Satellite channel<tag>out.action.key="648";out.action.msg="je zappe sur Jordan Satellite channel"</tag></item>
+      <item>zappe sur Kentron TV<tag>out.action.key="649";out.action.msg="je zappe sur Kentron TV"</tag></item>
+      <item>zappe sur Armenia 1<tag>out.action.key="650";out.action.msg="je zappe sur Armenia 1"</tag></item>
+      <item>zappe sur Armenia TV<tag>out.action.key="651";out.action.msg="je zappe sur Armenia TV"</tag></item>
+      <item>zappe sur VESTI<tag>out.action.key="653";out.action.msg="je zappe sur VESTI"</tag></item>
+      <item>zappe sur AL ARABIYA CHANNEL<tag>out.action.key="674";out.action.msg="je zappe sur AL ARABIYA CHANNEL"</tag></item>
+      <item>zappe sur Dzaïr TV<tag>out.action.key="675";out.action.msg="je zappe sur Dzaïr TV"</tag></item>
+      <item>zappe sur Dzaïr News<tag>out.action.key="676";out.action.msg="je zappe sur Dzaïr News"</tag></item>
+      <item>zappe sur NHK World SD <tag>out.action.key="680";out.action.msg="je zappe sur NHK World SD "</tag></item>
+      <item>zappe sur Russia Today<tag>out.action.key="694";out.action.msg="je zappe sur Russia Today"</tag></item>
+      <item>zappe sur Russia Today Esp.<tag>out.action.key="695";out.action.msg="je zappe sur Russia Today Esp."</tag></item>
+      <item>zappe sur Record International<tag>out.action.key="697";out.action.msg="je zappe sur Record International"</tag></item>
+      <item>zappe sur Russian Al Yaum<tag>out.action.key="698";out.action.msg="je zappe sur Russian Al Yaum"</tag></item>
+      <item>zappe sur Record News<tag>out.action.key="699";out.action.msg="je zappe sur Record News"</tag></item>
+      <item>zappe sur Mandarin TV<tag>out.action.key="719";out.action.msg="je zappe sur Mandarin TV"</tag></item>
+      <item>zappe sur CCTV Documentaire<tag>out.action.key="720";out.action.msg="je zappe sur CCTV Documentaire"</tag></item>
+      <item>zappe sur CCTV news<tag>out.action.key="722";out.action.msg="je zappe sur CCTV news"</tag></item>
+      <item>zappe sur CCTV-F<tag>out.action.key="723";out.action.msg="je zappe sur CCTV-F"</tag></item>
+      <item>zappe sur NTD Television<tag>out.action.key="799";out.action.msg="je zappe sur NTD Television"</tag></item>
+      <item>zappe sur GrandLille TV<tag>out.action.key="900";out.action.msg="je zappe sur GrandLille TV"</tag></item>
+      <item>zappe sur TV7 Bordeaux<tag>out.action.key="901";out.action.msg="je zappe sur TV7 Bordeaux"</tag></item>
+      <item>zappe sur 8 Mont-Blanc<tag>out.action.key="902";out.action.msg="je zappe sur 8 Mont-Blanc"</tag></item>
+      <item>zappe sur TéléGrenoble<tag>out.action.key="903";out.action.msg="je zappe sur TéléGrenoble"</tag></item>
+      <item>zappe sur Telif<tag>out.action.key="904";out.action.msg="je zappe sur Telif"</tag></item>
+      <item>zappe sur La Locale<tag>out.action.key="905";out.action.msg="je zappe sur La Locale"</tag></item>
+      <item>zappe sur La Chaine Normande<tag>out.action.key="906";out.action.msg="je zappe sur La Chaine Normande"</tag></item>
+      <item>zappe sur TéléNantes<tag>out.action.key="907";out.action.msg="je zappe sur TéléNantes"</tag></item>
+      <item>zappe sur TV Tours<tag>out.action.key="908";out.action.msg="je zappe sur TV Tours"</tag></item>
+      <item>zappe sur BFM Business Paris<tag>out.action.key="909";out.action.msg="je zappe sur BFM Business Paris"</tag></item>
+      <item>zappe sur IDF1<tag>out.action.key="910";out.action.msg="je zappe sur IDF1"</tag></item>
+      <item>zappe sur Locales IDF<tag>out.action.key="911";out.action.msg="je zappe sur Locales IDF"</tag></item>
+      <item>zappe sur Alsace 20<tag>out.action.key="912";out.action.msg="je zappe sur Alsace 20"</tag></item>
+      <item>zappe sur tvfil78<tag>out.action.key="913";out.action.msg="je zappe sur tvfil78"</tag></item>
+      <item>zappe sur Weo<tag>out.action.key="914";out.action.msg="je zappe sur Weo"</tag></item>
+      <item>zappe sur TLM<tag>out.action.key="915";out.action.msg="je zappe sur TLM"</tag></item>
+      <item>zappe sur VTV<tag>out.action.key="916";out.action.msg="je zappe sur VTV"</tag></item>
+      <item>zappe sur Canal10 Guadeloupe<tag>out.action.key="917";out.action.msg="je zappe sur Canal10 Guadeloupe"</tag></item>
+      <item>zappe sur Yvelines Première<tag>out.action.key="918";out.action.msg="je zappe sur Yvelines Première"</tag></item>
+      <item>zappe sur TV Sud Camargue-Cévennes<tag>out.action.key="919";out.action.msg="je zappe sur TV Sud Camargue-Cévennes"</tag></item>
+      <item>zappe sur Mirabelle TV<tag>out.action.key="920";out.action.msg="je zappe sur Mirabelle TV"</tag></item>
+      <item>zappe sur Vosges Television<tag>out.action.key="921";out.action.msg="je zappe sur Vosges Television"</tag></item>
+      <item>zappe sur TV Sud Montpellier<tag>out.action.key="922";out.action.msg="je zappe sur TV Sud Montpellier"</tag></item>
+      <item>zappe sur Maritima TV<tag>out.action.key="923";out.action.msg="je zappe sur Maritima TV"</tag></item>
+      <item>zappe sur TV Vendee<tag>out.action.key="924";out.action.msg="je zappe sur TV Vendee"</tag></item>
+      <item>zappe sur Canal 32<tag>out.action.key="925";out.action.msg="je zappe sur Canal 32"</tag></item>
+      <item>zappe sur TNA<tag>out.action.key="926";out.action.msg="je zappe sur TNA"</tag></item>
+      <item>zappe sur TVR<tag>out.action.key="927";out.action.msg="je zappe sur TVR"</tag></item>
+      <item>zappe sur Tébésud<tag>out.action.key="928";out.action.msg="je zappe sur Tébésud"</tag></item>
+      <item>zappe sur Tébéo<tag>out.action.key="929";out.action.msg="je zappe sur Tébéo"</tag></item>
+      <item>zappe sur DCI TV<tag>out.action.key="930";out.action.msg="je zappe sur DCI TV"</tag></item>
+      <item>zappe sur MFM TV<tag>out.action.key="931";out.action.msg="je zappe sur MFM TV"</tag></item>
+      <item>zappe sur TV Antilles<tag>out.action.key="932";out.action.msg="je zappe sur TV Antilles"</tag></item>
+      <item>zappe sur TL7<tag>out.action.key="933";out.action.msg="je zappe sur TL7"</tag></item>
+      <item>zappe sur TVPI<tag>out.action.key="934";out.action.msg="je zappe sur TVPI"</tag></item>
+      <item>zappe sur AZUR TV<tag>out.action.key="935";out.action.msg="je zappe sur AZUR TV"</tag></item>
+      <item>zappe sur Telim<tag>out.action.key="936";out.action.msg="je zappe sur Telim"</tag></item>
+      <item>zappe sur Ma Tele<tag>out.action.key="937";out.action.msg="je zappe sur Ma Tele"</tag></item>
+      <item>zappe sur Angers TV<tag>out.action.key="938";out.action.msg="je zappe sur Angers TV"</tag></item>
+      <item>zappe sur Télé Bocal<tag>out.action.key="939";out.action.msg="je zappe sur Télé Bocal"</tag></item>
+      <!-- -chainesEnd- Fin des chaines -->
     </one-of>
 
     <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/freebox";</tag>

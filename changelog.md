@@ -1,6 +1,18 @@
 ChangeLog
 =========
 
+**v5.0 ()** :
+  - Réécriture de tout le code
+  - Ajout d'un moyen de savoir si la Freebox est allumée
+  - Refonte de la documentation
+  - Configuration lors de l'installation qui se fait par la voix
+  - Les chaines sont chargées automatiquement depuis free.fr (avec possibilité de les personnaliser)
+  - Possibilité de trouver un dossier dans Mes Vidéos et de s'y rendre
+  - Possibilité d'utiliser "Mon Bouquet" (c'est-à-dire les chaines favorites) plutôt que "Freebox TV"
+
+**v4.3.3 ()** :
+  - Renumérotation Game One et LCI
+  
 **v4.3.2 (17/Mars/2016)** :
   - Compatibilité avec Freebox v5 en ajoutant un paramètre dans la configuration
   
@@ -29,7 +41,7 @@ ChangeLog
   - Ajout de la fonction "SARAH passe en mode Freebox"
   
 **v3.1 (18/Juin/2013)** :
-  - ajout de commandes ("freebox haut/bas/droite/gauche" et "va dans Mes Enregistrements/Vid?os")
-  - modification du nombre de points de volume (on augmente/baisse de 20 au lieu de 10)
-  - modification du code JavaScript avec l'utilisation de '*' lorsqu'on a plusieurs fois la m?me commande
-  - mise à jour de la documentation
+  - Ajout de commandes ("freebox haut/bas/droite/gauche" et "va dans Mes Enregistrements/Vid?os")
+  - Modification du nombre de points de volume (on augmente/baisse de 20 au lieu de 10)
+  - Modification du code JavaScript avec l'utilisation de '*' lorsqu'on a plusieurs fois la m?me commande
+  - Mise à jour de la documentation
