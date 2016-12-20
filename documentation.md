@@ -38,6 +38,10 @@ Par exemple, supposons que vous voulez seulement une recherche parmis vos série
 
 À mettre à `true` si vous souhaitez que SARAH aille plutôt dans "Mon Bouquet" (vos chaines favorites) ou dans "Freebox TV" lorsque vous dites `allume la télé` ou `mets la télé`.
 
+#### `box_to_control`
+
+Par défaut c'est la box dénommée `hd1` qui est pilotée, mais si vous avez plusieurs box vous pouvez modifier ce paramètre en mettant, par exemple, `hd2`.
+
 ### Modifier les chaines TV
 
 Les chaines de TV sont automatiquement récupérées depuis le site de Free au démarrage de SARAH puis elles sont écrites dans le fichier `freebox.xml`. Cependant il peut arriver que SARAH comprenne mal votre prononcation de certaines chaines.
