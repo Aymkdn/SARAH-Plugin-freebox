@@ -8,7 +8,7 @@ var freeboxPlugin = function(data, callback, config, SARAH) {
   // url pour accéder au Freebox Server
   _this.serverURL = "http://mafreebox.freebox.fr/api/v3/";
   // url pour accéder au Freebox Player
-  _this.playerURL = 'http://hd1.freebox.fr/pub/remote_control?code='+_this.config.code_telecommande;
+  _this.playerURL = 'http://'+(_this.config.box_to_control||"hd1")+'.freebox.fr/pub/remote_control?code='+_this.config.code_telecommande;
   // commandes spéciales pour les actions sur le player
   _this.commands = {
     'on'      : { key: 'power',       tts: "j'allume la fribox"},
@@ -224,7 +224,7 @@ freeboxPlugin.prototype.buildPlayerURL=function(keys){
 freeboxPlugin.prototype.requestURL=function(url, tts, after) {
   var u=url.shift();
   var _this=this;
-  //console.log("[PLUGIN 'Freebox' DEBUG] URL appelée => "+u);
+  console.log("[PLUGIN 'Freebox' DEBUG] URL appelée => "+u);
   _this.request({ 'uri': u }, function (err, response, json){
     if (err || response.statusCode != 200) {
       after.call(_this, false, err);
