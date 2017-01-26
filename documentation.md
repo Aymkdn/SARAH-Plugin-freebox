@@ -10,6 +10,8 @@ Dans l'univers Freebox, allez complètement à gauche dans la section **Réglage
 
 Dans le premier onglet vous trouverez votre **code télécommande réseau**.
 
+/!\ Attention : pour que le plugin soit fonctionnel, il vous faut aussi activer le AirMedia sur votre Freebox en allant dans **Réglages** → **Applications** → **AirMedia Video** puis **activer AirMedia**.
+
 ### Freebox v5
 
 Dans l'univers Freebox, allez dans **Paramètres**, puis **Informations Générales**, et vous aurez le **code télécommande**.
